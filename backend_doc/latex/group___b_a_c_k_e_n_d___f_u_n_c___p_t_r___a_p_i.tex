@@ -1,0 +1,608 @@
+\hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i}{}\doxysection{Backend C++ library runtime interface A\+PI}
+\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_d_p_n_p_func_data}{D\+P\+N\+P\+Func\+Data}}
+\begin{DoxyCompactList}\small\item\em Contains information about the C++ backend function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef struct \mbox{\hyperlink{struct_d_p_n_p_func_data}{D\+P\+N\+P\+Func\+Data}} \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga52f631e01afd73cc5573f9e8f61bd78f}{D\+P\+N\+P\+Func\+Data\+\_\+t}}
+\begin{DoxyCompactList}\small\item\em Contains information about the C++ backend function. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga8b20590525bff7c7ce4f728d2021b558}{D\+P\+N\+P\+Func\+Name}} \+: size\+\_\+t \{ \newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a01897799d4a0cba291db28a27e33cc24}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+N\+O\+NE}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a62b221588b156ef0f3cf9422ba9ace6f}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+B\+S\+O\+L\+U\+TE}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4ef557a202150c72794b887434d8ab6b}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+DD}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af468d39e59aa5024cfe419e07121aa24}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+A\+N\+GE}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aca6137beb9cccaff4b2b3d389f279f53}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+C\+OS}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a6f3ebcd92c5f694ad0653a84c51bff57}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+C\+O\+SH}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a8b3e0481d99ce37f70f12db1b1f14b29}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+S\+IN}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a836b34f04da5751503f41fa496a42614}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+S\+I\+NH}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558abb3e41c90c66ec7ccb00f50db1cee925}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+T\+AN}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558abf9a2ab2a57e9306d8fcd27e347ec180}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+T\+A\+N2}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558affbf46f58f8741b15c07c0600250e7bf}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+T\+A\+NH}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ad7a30d5f1ef5f03e82d0ec4a06b2cfd3}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+G\+M\+AX}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a563f719d139a7d794b600213dccef1de}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+G\+M\+IN}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a33a515ed4d5cd48b8e755dc4d5525643}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+G\+S\+O\+RT}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a6cabb871427eaf3e126962aaca2fc55c}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+B\+E\+TA}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a88112d747c085c02766a4a161672f071}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+B\+I\+T\+W\+I\+S\+E\+\_\+\+A\+ND}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a06b511fedc7bba874a0b5e8679f23320}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+B\+I\+T\+W\+I\+S\+E\+\_\+\+OR}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a63f515942a2e7c99358be648af1107b8}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+B\+I\+T\+W\+I\+S\+E\+\_\+\+X\+OR}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a9369d46f49ff95d9d0865f2fb58a2a88}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+B\+RT}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af11c9206d6eb40b78e5382a5b952668b}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+E\+IL}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a44f4458dda87eb046185f6a71f31a274}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+H\+I\+S\+Q\+U\+A\+RE}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ae4103d59e90a46b2d70fa1a139c6ceea}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+H\+O\+L\+E\+S\+KY}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a28e876fdcaa743f412997cbae503cb7c}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+O\+P\+Y\+S\+I\+GN}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a3849a9470b35f70f8aee6528db759b86}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+TE}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a8ccaa5e89773304071da2dc569770987}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+OS}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a21d1ba6db67fc1887b27b8a3aea26925}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+O\+SH}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4e3c9946978c0627bf39906da7804b3b}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+OV}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558accd4f4f5361af9a38bca158550c4499a}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+D\+E\+G\+R\+E\+ES}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ad2fe3ba99890bd43d5ec2888daaa3401}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+D\+ET}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a011747f4bb8e8fa90b1eccc3288a18cb}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+D\+I\+V\+I\+DE}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a5333d3eb859da5bba7770ae8194ca5d2}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+D\+OT}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af24b22e6b108ab6ea2546acee6d64c0e}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+E\+IG}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4b0f27d24f20b6272f2a447ddc8ecc17}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+E\+I\+G\+V\+A\+LS}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a110332d981da854dd393f536c35d6d0e}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+E\+XP}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aaea2f882f0d6b97962fa7ccf638af75a}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+E\+X\+P2}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a52fa313d696eb26004f70aff41879f83}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+E\+X\+P\+M1}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aa3de1dd43ea275efba2a9d244107a442}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T\+I\+AL}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a1d17f8b62bec77729d3be9fac1cc8aa0}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+F\+A\+BS}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a63711aacf33f240b313f3506ee1f12d0}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+F\+L\+O\+OR}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ad43ddf3f3625ab7f18dcedfc59c80363}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+F\+L\+O\+O\+R\+\_\+\+D\+I\+V\+I\+DE}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4510c4b3be52538c147ec53ca6ba5ad3}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+F\+M\+OD}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a413f18c87865418c35e1646f515789c3}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+G\+A\+M\+MA}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a3fc9b77bea9d9c33d8d5862763a8c91d}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+G\+A\+U\+S\+S\+I\+AN}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aaccb1aaadc26a588af11fff35e397119}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+H\+Y\+P\+OT}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a67500bc4e39eaf00dc16ae3d24d85bcf}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+I\+N\+V\+E\+RT}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aae41d24340052a862749fda1fd21e4ed}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+L\+E\+F\+T\+\_\+\+S\+H\+I\+FT}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a85b036c84d3c49e42e3553f78b674f0f}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+L\+OG}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a8b1fbdc3770ac692cfef716805de474b}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+L\+O\+G10}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af9851fa6cc53a0fdbda609d059f26f8f}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+L\+O\+G2}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a963ae376b39f0e3ba32c52a923af829f}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+L\+O\+G1P}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a690c5b5c2647c5988ba7951dd28277d2}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+A\+T\+M\+UL}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ad338d9762f0b28cacdf0c4e90d2bce4f}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+R\+A\+NK}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a7fdc6b2053d31144e2c19dd861ede010}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+AX}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a0ef9d2289cbda119cd9d451425f089ab}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+A\+X\+I\+M\+UM}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af905d2372a52b6fb1b7a22b76010b6dd}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+E\+AN}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a44ceec4f99af1bc08e8f5543b386180e}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+E\+D\+I\+AN}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a9efe7aa7ce951e7a44180b3160bcfd01}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+IN}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558abbe2672040e69d7d9962201d1e5f1eb7}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+I\+N\+I\+M\+UM}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558addd017f3f6c6753bc796a1ee5e9e4dcb}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+O\+DF}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a051aaed58a292f8a66357f883923973b}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+U\+L\+T\+I\+P\+LY}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a1ee2503a88e2f0fb7735e6f2b2390ed6}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+P\+O\+W\+ER}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a72a62985c0bb7a38d58d9a8ab34ab19c}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+P\+R\+OD}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ae93db2c712f91a83ee9bcb56eb1fa74f}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+R\+A\+D\+I\+A\+NS}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a028e932a6262fc8cbff6ab47412f6b71}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+R\+E\+M\+A\+I\+N\+D\+ER}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a0dbb5104ccb3369e5088d8cd8356c95e}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+R\+E\+C\+IP}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ab42ed2c36eba8a3ec79ba5f60f5f54de}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+R\+I\+G\+H\+T\+\_\+\+S\+H\+I\+FT}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a12ef46387104df46d7533d39d1902ae8}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+I\+GN}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a45620d825f2307be019fc259cde9b89b}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+IN}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558acd54e3d88372fb5f571f071f4a570d43}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+I\+NH}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a99dd510a742f3c15b48092cef64f8aa3}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+O\+RT}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af8187e64cd7661fbf4bf2fd04f339e5c}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+Q\+RT}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af3639a7757f1772416d4402153d9987b}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+Q\+U\+A\+RE}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ac0d3143bc0fd7a8f43501a3a8784a148}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+TD}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4d36c00d4572df84a1542dbaad885f7d}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+U\+B\+T\+R\+A\+CT}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a5a5f78154de3845f234e34f22d870448}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+UM}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a1cffd235f788463d6e4e57768fa7de18}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+T\+AN}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ac7b0abf31d4a2ac1db81be2fcb55e834}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+T\+A\+NH}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aea1af5a5fd54ec2b30455fa94646bfdc}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+T\+R\+A\+N\+S\+P\+O\+SE}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a13bde9c6fe6a1d7c4eedcaa50861010f}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+T\+R\+U\+NC}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aff117034dc315fe2de247591829ea105}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+U\+N\+I\+F\+O\+RM}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a17750205304e246fad783e631614cf48}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+V\+AR}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aadc54195a4c41ac24ed1aa10f8e6f6a4}{D\+P\+N\+P\+Func\+Name\+::\+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+L\+A\+ST}}
+ \}
+\begin{DoxyCompactList}\small\item\em Function names to request via this interface. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}{D\+P\+N\+P\+Func\+Type}} \+: size\+\_\+t \{ \newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15a4dd2e447249c9f1ed5b4a01263bd8d06}{D\+P\+N\+P\+Func\+Type\+::\+D\+P\+N\+P\+\_\+\+F\+T\+\_\+\+N\+O\+NE}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15a2ca75eef4ff62b379b29390b6efe736f}{D\+P\+N\+P\+Func\+Type\+::\+D\+P\+N\+P\+\_\+\+F\+T\+\_\+\+I\+NT}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15a8160fd9c1c7bd64515ffa60b8140f208}{D\+P\+N\+P\+Func\+Type\+::\+D\+P\+N\+P\+\_\+\+F\+T\+\_\+\+L\+O\+NG}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15aea1ca4f8f623afaaf6072b0b6eb56c76}{D\+P\+N\+P\+Func\+Type\+::\+D\+P\+N\+P\+\_\+\+F\+T\+\_\+\+F\+L\+O\+AT}}, 
+\newline
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15ac84f19e1412dd40492153e4cb0e27739}{D\+P\+N\+P\+Func\+Type\+::\+D\+P\+N\+P\+\_\+\+F\+T\+\_\+\+D\+O\+U\+B\+LE}}
+ \}
+\begin{DoxyCompactList}\small\item\em Template types which are used in this interface. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This section describes Backend A\+PI for runtime function pointers 
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga52f631e01afd73cc5573f9e8f61bd78f}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga52f631e01afd73cc5573f9e8f61bd78f}} 
+\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNPFuncData\_t@{DPNPFuncData\_t}}
+\index{DPNPFuncData\_t@{DPNPFuncData\_t}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}
+\doxysubsubsection{\texorpdfstring{DPNPFuncData\_t}{DPNPFuncData\_t}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_d_p_n_p_func_data}{D\+P\+N\+P\+Func\+Data}} \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga52f631e01afd73cc5573f9e8f61bd78f}{D\+P\+N\+P\+Func\+Data\+\_\+t}}}
+
+
+
+Contains information about the C++ backend function. 
+
+The structure defines the types that are used by \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga5d37203d4448c22f7b046710d639fd4e}{get\+\_\+dpnp\+\_\+function\+\_\+ptr}}. 
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga8b20590525bff7c7ce4f728d2021b558}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga8b20590525bff7c7ce4f728d2021b558}} 
+\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNPFuncName@{DPNPFuncName}}
+\index{DPNPFuncName@{DPNPFuncName}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}
+\doxysubsubsection{\texorpdfstring{DPNPFuncName}{DPNPFuncName}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga8b20590525bff7c7ce4f728d2021b558}{D\+P\+N\+P\+Func\+Name}} \+: size\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Function names to request via this interface. 
+
+The structure defines the parameters that are used by \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga5d37203d4448c22f7b046710d639fd4e}{get\+\_\+dpnp\+\_\+function\+\_\+ptr}}. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_NONE@{DPNP\_FN\_NONE}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_NONE@{DPNP\_FN\_NONE}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a01897799d4a0cba291db28a27e33cc24}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a01897799d4a0cba291db28a27e33cc24}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+N\+O\+NE&Very first element of the enumeration \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_ABSOLUTE@{DPNP\_FN\_ABSOLUTE}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_ABSOLUTE@{DPNP\_FN\_ABSOLUTE}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a62b221588b156ef0f3cf9422ba9ace6f}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a62b221588b156ef0f3cf9422ba9ace6f}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+B\+S\+O\+L\+U\+TE&Used in numpy.\+absolute() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_ADD@{DPNP\_FN\_ADD}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_ADD@{DPNP\_FN\_ADD}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4ef557a202150c72794b887434d8ab6b}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4ef557a202150c72794b887434d8ab6b}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+DD&Used in numpy.\+add() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_ARANGE@{DPNP\_FN\_ARANGE}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_ARANGE@{DPNP\_FN\_ARANGE}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af468d39e59aa5024cfe419e07121aa24}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af468d39e59aa5024cfe419e07121aa24}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+A\+N\+GE&Used in numpy.\+arange() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_ARCCOS@{DPNP\_FN\_ARCCOS}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_ARCCOS@{DPNP\_FN\_ARCCOS}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aca6137beb9cccaff4b2b3d389f279f53}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aca6137beb9cccaff4b2b3d389f279f53}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+C\+OS&Used in numpy.\+arccos() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_ARCCOSH@{DPNP\_FN\_ARCCOSH}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_ARCCOSH@{DPNP\_FN\_ARCCOSH}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a6f3ebcd92c5f694ad0653a84c51bff57}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a6f3ebcd92c5f694ad0653a84c51bff57}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+C\+O\+SH&Used in numpy.\+arccosh() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_ARCSIN@{DPNP\_FN\_ARCSIN}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_ARCSIN@{DPNP\_FN\_ARCSIN}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a8b3e0481d99ce37f70f12db1b1f14b29}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a8b3e0481d99ce37f70f12db1b1f14b29}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+S\+IN&Used in numpy.\+arcsin() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_ARCSINH@{DPNP\_FN\_ARCSINH}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_ARCSINH@{DPNP\_FN\_ARCSINH}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a836b34f04da5751503f41fa496a42614}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a836b34f04da5751503f41fa496a42614}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+S\+I\+NH&Used in numpy.\+arcsinh() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_ARCTAN@{DPNP\_FN\_ARCTAN}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_ARCTAN@{DPNP\_FN\_ARCTAN}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558abb3e41c90c66ec7ccb00f50db1cee925}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558abb3e41c90c66ec7ccb00f50db1cee925}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+T\+AN&Used in numpy.\+arctan() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_ARCTAN2@{DPNP\_FN\_ARCTAN2}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_ARCTAN2@{DPNP\_FN\_ARCTAN2}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558abf9a2ab2a57e9306d8fcd27e347ec180}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558abf9a2ab2a57e9306d8fcd27e347ec180}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+T\+A\+N2&Used in numpy.\+arctan2() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_ARCTANH@{DPNP\_FN\_ARCTANH}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_ARCTANH@{DPNP\_FN\_ARCTANH}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558affbf46f58f8741b15c07c0600250e7bf}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558affbf46f58f8741b15c07c0600250e7bf}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+C\+T\+A\+NH&Used in numpy.\+arctanh() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_ARGMAX@{DPNP\_FN\_ARGMAX}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_ARGMAX@{DPNP\_FN\_ARGMAX}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ad7a30d5f1ef5f03e82d0ec4a06b2cfd3}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ad7a30d5f1ef5f03e82d0ec4a06b2cfd3}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+G\+M\+AX&Used in numpy.\+argmax() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_ARGMIN@{DPNP\_FN\_ARGMIN}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_ARGMIN@{DPNP\_FN\_ARGMIN}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a563f719d139a7d794b600213dccef1de}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a563f719d139a7d794b600213dccef1de}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+G\+M\+IN&Used in numpy.\+argmin() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_ARGSORT@{DPNP\_FN\_ARGSORT}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_ARGSORT@{DPNP\_FN\_ARGSORT}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a33a515ed4d5cd48b8e755dc4d5525643}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a33a515ed4d5cd48b8e755dc4d5525643}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+A\+R\+G\+S\+O\+RT&Used in numpy.\+argsort() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_BETA@{DPNP\_FN\_BETA}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_BETA@{DPNP\_FN\_BETA}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a6cabb871427eaf3e126962aaca2fc55c}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a6cabb871427eaf3e126962aaca2fc55c}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+B\+E\+TA&Used in numpy.\+random.\+beta() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_BITWISE\_AND@{DPNP\_FN\_BITWISE\_AND}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_BITWISE\_AND@{DPNP\_FN\_BITWISE\_AND}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a88112d747c085c02766a4a161672f071}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a88112d747c085c02766a4a161672f071}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+B\+I\+T\+W\+I\+S\+E\+\_\+\+A\+ND&Used in numpy.\+bitwise\+\_\+and() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_BITWISE\_OR@{DPNP\_FN\_BITWISE\_OR}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_BITWISE\_OR@{DPNP\_FN\_BITWISE\_OR}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a06b511fedc7bba874a0b5e8679f23320}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a06b511fedc7bba874a0b5e8679f23320}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+B\+I\+T\+W\+I\+S\+E\+\_\+\+OR&Used in numpy.\+bitwise\+\_\+or() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_BITWISE\_XOR@{DPNP\_FN\_BITWISE\_XOR}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_BITWISE\_XOR@{DPNP\_FN\_BITWISE\_XOR}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a63f515942a2e7c99358be648af1107b8}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a63f515942a2e7c99358be648af1107b8}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+B\+I\+T\+W\+I\+S\+E\+\_\+\+X\+OR&Used in numpy.\+bitwise\+\_\+xor() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_CBRT@{DPNP\_FN\_CBRT}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_CBRT@{DPNP\_FN\_CBRT}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a9369d46f49ff95d9d0865f2fb58a2a88}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a9369d46f49ff95d9d0865f2fb58a2a88}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+B\+RT&Used in numpy.\+cbrt() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_CEIL@{DPNP\_FN\_CEIL}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_CEIL@{DPNP\_FN\_CEIL}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af11c9206d6eb40b78e5382a5b952668b}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af11c9206d6eb40b78e5382a5b952668b}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+E\+IL&Used in numpy.\+ceil() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_CHISQUARE@{DPNP\_FN\_CHISQUARE}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_CHISQUARE@{DPNP\_FN\_CHISQUARE}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a44f4458dda87eb046185f6a71f31a274}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a44f4458dda87eb046185f6a71f31a274}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+H\+I\+S\+Q\+U\+A\+RE&Used in numpy.\+random.\+chisquare() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_CHOLESKY@{DPNP\_FN\_CHOLESKY}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_CHOLESKY@{DPNP\_FN\_CHOLESKY}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ae4103d59e90a46b2d70fa1a139c6ceea}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ae4103d59e90a46b2d70fa1a139c6ceea}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+H\+O\+L\+E\+S\+KY&Used in numpy.\+linalg.\+cholesky() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_COPYSIGN@{DPNP\_FN\_COPYSIGN}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_COPYSIGN@{DPNP\_FN\_COPYSIGN}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a28e876fdcaa743f412997cbae503cb7c}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a28e876fdcaa743f412997cbae503cb7c}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+O\+P\+Y\+S\+I\+GN&Used in numpy.\+copysign() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_CORRELATE@{DPNP\_FN\_CORRELATE}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_CORRELATE@{DPNP\_FN\_CORRELATE}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a3849a9470b35f70f8aee6528db759b86}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a3849a9470b35f70f8aee6528db759b86}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+O\+R\+R\+E\+L\+A\+TE&Used in numpy.\+correlate() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_COS@{DPNP\_FN\_COS}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_COS@{DPNP\_FN\_COS}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a8ccaa5e89773304071da2dc569770987}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a8ccaa5e89773304071da2dc569770987}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+OS&Used in numpy.\+cos() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_COSH@{DPNP\_FN\_COSH}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_COSH@{DPNP\_FN\_COSH}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a21d1ba6db67fc1887b27b8a3aea26925}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a21d1ba6db67fc1887b27b8a3aea26925}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+O\+SH&Used in numpy.\+cosh() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_COV@{DPNP\_FN\_COV}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_COV@{DPNP\_FN\_COV}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4e3c9946978c0627bf39906da7804b3b}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4e3c9946978c0627bf39906da7804b3b}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+C\+OV&Used in numpy.\+cov() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_DEGREES@{DPNP\_FN\_DEGREES}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_DEGREES@{DPNP\_FN\_DEGREES}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558accd4f4f5361af9a38bca158550c4499a}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558accd4f4f5361af9a38bca158550c4499a}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+D\+E\+G\+R\+E\+ES&Used in numpy.\+degrees() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_DET@{DPNP\_FN\_DET}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_DET@{DPNP\_FN\_DET}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ad2fe3ba99890bd43d5ec2888daaa3401}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ad2fe3ba99890bd43d5ec2888daaa3401}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+D\+ET&Used in numpy.\+linalg.\+det() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_DIVIDE@{DPNP\_FN\_DIVIDE}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_DIVIDE@{DPNP\_FN\_DIVIDE}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a011747f4bb8e8fa90b1eccc3288a18cb}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a011747f4bb8e8fa90b1eccc3288a18cb}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+D\+I\+V\+I\+DE&Used in numpy.\+divide() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_DOT@{DPNP\_FN\_DOT}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_DOT@{DPNP\_FN\_DOT}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a5333d3eb859da5bba7770ae8194ca5d2}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a5333d3eb859da5bba7770ae8194ca5d2}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+D\+OT&Used in numpy.\+dot() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_EIG@{DPNP\_FN\_EIG}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_EIG@{DPNP\_FN\_EIG}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af24b22e6b108ab6ea2546acee6d64c0e}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af24b22e6b108ab6ea2546acee6d64c0e}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+E\+IG&Used in numpy.\+linalg.\+eig() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_EIGVALS@{DPNP\_FN\_EIGVALS}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_EIGVALS@{DPNP\_FN\_EIGVALS}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4b0f27d24f20b6272f2a447ddc8ecc17}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4b0f27d24f20b6272f2a447ddc8ecc17}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+E\+I\+G\+V\+A\+LS&Used in numpy.\+linalg.\+eigvals() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_EXP@{DPNP\_FN\_EXP}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_EXP@{DPNP\_FN\_EXP}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a110332d981da854dd393f536c35d6d0e}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a110332d981da854dd393f536c35d6d0e}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+E\+XP&Used in numpy.\+exp() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_EXP2@{DPNP\_FN\_EXP2}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_EXP2@{DPNP\_FN\_EXP2}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aaea2f882f0d6b97962fa7ccf638af75a}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aaea2f882f0d6b97962fa7ccf638af75a}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+E\+X\+P2&Used in numpy.\+exp2() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_EXPM1@{DPNP\_FN\_EXPM1}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_EXPM1@{DPNP\_FN\_EXPM1}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a52fa313d696eb26004f70aff41879f83}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a52fa313d696eb26004f70aff41879f83}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+E\+X\+P\+M1&Used in numpy.\+expm1() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_EXPONENTIAL@{DPNP\_FN\_EXPONENTIAL}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_EXPONENTIAL@{DPNP\_FN\_EXPONENTIAL}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aa3de1dd43ea275efba2a9d244107a442}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aa3de1dd43ea275efba2a9d244107a442}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+E\+X\+P\+O\+N\+E\+N\+T\+I\+AL&Used in numpy.\+random.\+exponential() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_FABS@{DPNP\_FN\_FABS}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_FABS@{DPNP\_FN\_FABS}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a1d17f8b62bec77729d3be9fac1cc8aa0}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a1d17f8b62bec77729d3be9fac1cc8aa0}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+F\+A\+BS&Used in numpy.\+fabs() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_FLOOR@{DPNP\_FN\_FLOOR}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_FLOOR@{DPNP\_FN\_FLOOR}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a63711aacf33f240b313f3506ee1f12d0}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a63711aacf33f240b313f3506ee1f12d0}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+F\+L\+O\+OR&Used in numpy.\+floor() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_FLOOR\_DIVIDE@{DPNP\_FN\_FLOOR\_DIVIDE}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_FLOOR\_DIVIDE@{DPNP\_FN\_FLOOR\_DIVIDE}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ad43ddf3f3625ab7f18dcedfc59c80363}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ad43ddf3f3625ab7f18dcedfc59c80363}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+F\+L\+O\+O\+R\+\_\+\+D\+I\+V\+I\+DE&Used in numpy.\+floor\+\_\+divide() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_FMOD@{DPNP\_FN\_FMOD}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_FMOD@{DPNP\_FN\_FMOD}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4510c4b3be52538c147ec53ca6ba5ad3}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4510c4b3be52538c147ec53ca6ba5ad3}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+F\+M\+OD&Used in numpy.\+fmod() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_GAMMA@{DPNP\_FN\_GAMMA}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_GAMMA@{DPNP\_FN\_GAMMA}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a413f18c87865418c35e1646f515789c3}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a413f18c87865418c35e1646f515789c3}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+G\+A\+M\+MA&Used in numpy.\+random.\+gamma() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_GAUSSIAN@{DPNP\_FN\_GAUSSIAN}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_GAUSSIAN@{DPNP\_FN\_GAUSSIAN}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a3fc9b77bea9d9c33d8d5862763a8c91d}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a3fc9b77bea9d9c33d8d5862763a8c91d}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+G\+A\+U\+S\+S\+I\+AN&Used in numpy.\+random.\+randn() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_HYPOT@{DPNP\_FN\_HYPOT}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_HYPOT@{DPNP\_FN\_HYPOT}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aaccb1aaadc26a588af11fff35e397119}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aaccb1aaadc26a588af11fff35e397119}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+H\+Y\+P\+OT&Used in numpy.\+hypot() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_INVERT@{DPNP\_FN\_INVERT}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_INVERT@{DPNP\_FN\_INVERT}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a67500bc4e39eaf00dc16ae3d24d85bcf}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a67500bc4e39eaf00dc16ae3d24d85bcf}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+I\+N\+V\+E\+RT&Used in numpy.\+invert() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_LEFT\_SHIFT@{DPNP\_FN\_LEFT\_SHIFT}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_LEFT\_SHIFT@{DPNP\_FN\_LEFT\_SHIFT}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aae41d24340052a862749fda1fd21e4ed}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aae41d24340052a862749fda1fd21e4ed}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+L\+E\+F\+T\+\_\+\+S\+H\+I\+FT&Used in numpy.\+left\+\_\+shift() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_LOG@{DPNP\_FN\_LOG}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_LOG@{DPNP\_FN\_LOG}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a85b036c84d3c49e42e3553f78b674f0f}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a85b036c84d3c49e42e3553f78b674f0f}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+L\+OG&Used in numpy.\+log() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_LOG10@{DPNP\_FN\_LOG10}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_LOG10@{DPNP\_FN\_LOG10}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a8b1fbdc3770ac692cfef716805de474b}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a8b1fbdc3770ac692cfef716805de474b}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+L\+O\+G10&Used in numpy.\+log10() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_LOG2@{DPNP\_FN\_LOG2}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_LOG2@{DPNP\_FN\_LOG2}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af9851fa6cc53a0fdbda609d059f26f8f}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af9851fa6cc53a0fdbda609d059f26f8f}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+L\+O\+G2&Used in numpy.\+log2() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_LOG1P@{DPNP\_FN\_LOG1P}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_LOG1P@{DPNP\_FN\_LOG1P}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a963ae376b39f0e3ba32c52a923af829f}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a963ae376b39f0e3ba32c52a923af829f}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+L\+O\+G1P&Used in numpy.\+log1p() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_MATMUL@{DPNP\_FN\_MATMUL}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_MATMUL@{DPNP\_FN\_MATMUL}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a690c5b5c2647c5988ba7951dd28277d2}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a690c5b5c2647c5988ba7951dd28277d2}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+A\+T\+M\+UL&Used in numpy.\+matmul() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_MATRIX\_RANK@{DPNP\_FN\_MATRIX\_RANK}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_MATRIX\_RANK@{DPNP\_FN\_MATRIX\_RANK}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ad338d9762f0b28cacdf0c4e90d2bce4f}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ad338d9762f0b28cacdf0c4e90d2bce4f}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+A\+T\+R\+I\+X\+\_\+\+R\+A\+NK&Used in numpy.\+linalg.\+matrix\+\_\+rank() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_MAX@{DPNP\_FN\_MAX}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_MAX@{DPNP\_FN\_MAX}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a7fdc6b2053d31144e2c19dd861ede010}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a7fdc6b2053d31144e2c19dd861ede010}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+AX&Used in numpy.\+max() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_MAXIMUM@{DPNP\_FN\_MAXIMUM}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_MAXIMUM@{DPNP\_FN\_MAXIMUM}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a0ef9d2289cbda119cd9d451425f089ab}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a0ef9d2289cbda119cd9d451425f089ab}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+A\+X\+I\+M\+UM&Used in numpy.\+maximum() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_MEAN@{DPNP\_FN\_MEAN}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_MEAN@{DPNP\_FN\_MEAN}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af905d2372a52b6fb1b7a22b76010b6dd}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af905d2372a52b6fb1b7a22b76010b6dd}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+E\+AN&Used in numpy.\+mean() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_MEDIAN@{DPNP\_FN\_MEDIAN}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_MEDIAN@{DPNP\_FN\_MEDIAN}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a44ceec4f99af1bc08e8f5543b386180e}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a44ceec4f99af1bc08e8f5543b386180e}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+E\+D\+I\+AN&Used in numpy.\+median() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_MIN@{DPNP\_FN\_MIN}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_MIN@{DPNP\_FN\_MIN}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a9efe7aa7ce951e7a44180b3160bcfd01}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a9efe7aa7ce951e7a44180b3160bcfd01}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+IN&Used in numpy.\+min() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_MINIMUM@{DPNP\_FN\_MINIMUM}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_MINIMUM@{DPNP\_FN\_MINIMUM}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558abbe2672040e69d7d9962201d1e5f1eb7}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558abbe2672040e69d7d9962201d1e5f1eb7}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+I\+N\+I\+M\+UM&Used in numpy.\+minimum() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_MODF@{DPNP\_FN\_MODF}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_MODF@{DPNP\_FN\_MODF}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558addd017f3f6c6753bc796a1ee5e9e4dcb}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558addd017f3f6c6753bc796a1ee5e9e4dcb}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+O\+DF&Used in numpy.\+modf() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_MULTIPLY@{DPNP\_FN\_MULTIPLY}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_MULTIPLY@{DPNP\_FN\_MULTIPLY}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a051aaed58a292f8a66357f883923973b}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a051aaed58a292f8a66357f883923973b}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+M\+U\+L\+T\+I\+P\+LY&Used in numpy.\+multiply() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_POWER@{DPNP\_FN\_POWER}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_POWER@{DPNP\_FN\_POWER}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a1ee2503a88e2f0fb7735e6f2b2390ed6}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a1ee2503a88e2f0fb7735e6f2b2390ed6}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+P\+O\+W\+ER&Used in numpy.\+random.\+power() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_PROD@{DPNP\_FN\_PROD}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_PROD@{DPNP\_FN\_PROD}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a72a62985c0bb7a38d58d9a8ab34ab19c}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a72a62985c0bb7a38d58d9a8ab34ab19c}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+P\+R\+OD&Used in numpy.\+prod() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_RADIANS@{DPNP\_FN\_RADIANS}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_RADIANS@{DPNP\_FN\_RADIANS}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ae93db2c712f91a83ee9bcb56eb1fa74f}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ae93db2c712f91a83ee9bcb56eb1fa74f}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+R\+A\+D\+I\+A\+NS&Used in numpy.\+radians() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_REMAINDER@{DPNP\_FN\_REMAINDER}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_REMAINDER@{DPNP\_FN\_REMAINDER}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a028e932a6262fc8cbff6ab47412f6b71}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a028e932a6262fc8cbff6ab47412f6b71}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+R\+E\+M\+A\+I\+N\+D\+ER&Used in numpy.\+remainder() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_RECIP@{DPNP\_FN\_RECIP}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_RECIP@{DPNP\_FN\_RECIP}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a0dbb5104ccb3369e5088d8cd8356c95e}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a0dbb5104ccb3369e5088d8cd8356c95e}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+R\+E\+C\+IP&Used in numpy.\+recip() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_RIGHT\_SHIFT@{DPNP\_FN\_RIGHT\_SHIFT}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_RIGHT\_SHIFT@{DPNP\_FN\_RIGHT\_SHIFT}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ab42ed2c36eba8a3ec79ba5f60f5f54de}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ab42ed2c36eba8a3ec79ba5f60f5f54de}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+R\+I\+G\+H\+T\+\_\+\+S\+H\+I\+FT&Used in numpy.\+right\+\_\+shift() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_SIGN@{DPNP\_FN\_SIGN}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_SIGN@{DPNP\_FN\_SIGN}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a12ef46387104df46d7533d39d1902ae8}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a12ef46387104df46d7533d39d1902ae8}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+I\+GN&Used in numpy.\+sign() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_SIN@{DPNP\_FN\_SIN}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_SIN@{DPNP\_FN\_SIN}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a45620d825f2307be019fc259cde9b89b}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a45620d825f2307be019fc259cde9b89b}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+IN&Used in numpy.\+sin() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_SINH@{DPNP\_FN\_SINH}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_SINH@{DPNP\_FN\_SINH}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558acd54e3d88372fb5f571f071f4a570d43}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558acd54e3d88372fb5f571f071f4a570d43}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+I\+NH&Used in numpy.\+sinh() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_SORT@{DPNP\_FN\_SORT}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_SORT@{DPNP\_FN\_SORT}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a99dd510a742f3c15b48092cef64f8aa3}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a99dd510a742f3c15b48092cef64f8aa3}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+O\+RT&Used in numpy.\+sort() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_SQRT@{DPNP\_FN\_SQRT}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_SQRT@{DPNP\_FN\_SQRT}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af8187e64cd7661fbf4bf2fd04f339e5c}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af8187e64cd7661fbf4bf2fd04f339e5c}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+Q\+RT&Used in numpy.\+sqrt() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_SQUARE@{DPNP\_FN\_SQUARE}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_SQUARE@{DPNP\_FN\_SQUARE}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af3639a7757f1772416d4402153d9987b}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558af3639a7757f1772416d4402153d9987b}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+Q\+U\+A\+RE&Used in numpy.\+square() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_STD@{DPNP\_FN\_STD}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_STD@{DPNP\_FN\_STD}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ac0d3143bc0fd7a8f43501a3a8784a148}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ac0d3143bc0fd7a8f43501a3a8784a148}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+TD&Used in numpy.\+std() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_SUBTRACT@{DPNP\_FN\_SUBTRACT}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_SUBTRACT@{DPNP\_FN\_SUBTRACT}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4d36c00d4572df84a1542dbaad885f7d}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a4d36c00d4572df84a1542dbaad885f7d}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+U\+B\+T\+R\+A\+CT&Used in numpy.\+subtract() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_SUM@{DPNP\_FN\_SUM}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_SUM@{DPNP\_FN\_SUM}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a5a5f78154de3845f234e34f22d870448}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a5a5f78154de3845f234e34f22d870448}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+S\+UM&Used in numpy.\+sum() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_TAN@{DPNP\_FN\_TAN}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_TAN@{DPNP\_FN\_TAN}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a1cffd235f788463d6e4e57768fa7de18}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a1cffd235f788463d6e4e57768fa7de18}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+T\+AN&Used in numpy.\+tan() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_TANH@{DPNP\_FN\_TANH}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_TANH@{DPNP\_FN\_TANH}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ac7b0abf31d4a2ac1db81be2fcb55e834}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558ac7b0abf31d4a2ac1db81be2fcb55e834}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+T\+A\+NH&Used in numpy.\+tanh() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_TRANSPOSE@{DPNP\_FN\_TRANSPOSE}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_TRANSPOSE@{DPNP\_FN\_TRANSPOSE}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aea1af5a5fd54ec2b30455fa94646bfdc}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aea1af5a5fd54ec2b30455fa94646bfdc}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+T\+R\+A\+N\+S\+P\+O\+SE&Used in numpy.\+transpose() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_TRUNC@{DPNP\_FN\_TRUNC}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_TRUNC@{DPNP\_FN\_TRUNC}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a13bde9c6fe6a1d7c4eedcaa50861010f}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a13bde9c6fe6a1d7c4eedcaa50861010f}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+T\+R\+U\+NC&Used in numpy.\+trunc() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_UNIFORM@{DPNP\_FN\_UNIFORM}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_UNIFORM@{DPNP\_FN\_UNIFORM}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aff117034dc315fe2de247591829ea105}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aff117034dc315fe2de247591829ea105}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+U\+N\+I\+F\+O\+RM&Used in numpy.\+random.\+uniform() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_VAR@{DPNP\_FN\_VAR}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_VAR@{DPNP\_FN\_VAR}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a17750205304e246fad783e631614cf48}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558a17750205304e246fad783e631614cf48}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+V\+AR&Used in numpy.\+var() implementation ~\newline
+ \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FN\_LAST@{DPNP\_FN\_LAST}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FN\_LAST@{DPNP\_FN\_LAST}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aadc54195a4c41ac24ed1aa10f8e6f6a4}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gga8b20590525bff7c7ce4f728d2021b558aadc54195a4c41ac24ed1aa10f8e6f6a4}} 
+D\+P\+N\+P\+\_\+\+F\+N\+\_\+\+L\+A\+ST&The latest element of the enumeration \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 60 of file backend\+\_\+iface\+\_\+fptr.\+hpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}} 
+\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNPFuncType@{DPNPFuncType}}
+\index{DPNPFuncType@{DPNPFuncType}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}
+\doxysubsubsection{\texorpdfstring{DPNPFuncType}{DPNPFuncType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}{D\+P\+N\+P\+Func\+Type}} \+: size\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+Template types which are used in this interface. 
+
+The structure defines the types that are used by \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga5d37203d4448c22f7b046710d639fd4e}{get\+\_\+dpnp\+\_\+function\+\_\+ptr}}. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FT\_NONE@{DPNP\_FT\_NONE}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FT\_NONE@{DPNP\_FT\_NONE}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15a4dd2e447249c9f1ed5b4a01263bd8d06}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15a4dd2e447249c9f1ed5b4a01263bd8d06}} 
+D\+P\+N\+P\+\_\+\+F\+T\+\_\+\+N\+O\+NE&Very first element of the enumeration \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FT\_INT@{DPNP\_FT\_INT}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FT\_INT@{DPNP\_FT\_INT}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15a2ca75eef4ff62b379b29390b6efe736f}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15a2ca75eef4ff62b379b29390b6efe736f}} 
+D\+P\+N\+P\+\_\+\+F\+T\+\_\+\+I\+NT&analog of numpy.\+int32 or int \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FT\_LONG@{DPNP\_FT\_LONG}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FT\_LONG@{DPNP\_FT\_LONG}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15a8160fd9c1c7bd64515ffa60b8140f208}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15a8160fd9c1c7bd64515ffa60b8140f208}} 
+D\+P\+N\+P\+\_\+\+F\+T\+\_\+\+L\+O\+NG&analog of numpy.\+int64 or long \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FT\_FLOAT@{DPNP\_FT\_FLOAT}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FT\_FLOAT@{DPNP\_FT\_FLOAT}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15aea1ca4f8f623afaaf6072b0b6eb56c76}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15aea1ca4f8f623afaaf6072b0b6eb56c76}} 
+D\+P\+N\+P\+\_\+\+F\+T\+\_\+\+F\+L\+O\+AT&analog of numpy.\+float32 or float \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{DPNP\_FT\_DOUBLE@{DPNP\_FT\_DOUBLE}!Backend C++ library runtime interface API@{Backend C++ library runtime interface API}}\index{Backend C++ library runtime interface API@{Backend C++ library runtime interface API}!DPNP\_FT\_DOUBLE@{DPNP\_FT\_DOUBLE}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15ac84f19e1412dd40492153e4cb0e27739}\label{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ggaec54569b58e937e84099479f078bce15ac84f19e1412dd40492153e4cb0e27739}} 
+D\+P\+N\+P\+\_\+\+F\+T\+\_\+\+D\+O\+U\+B\+LE&analog of numpy.\+float32 or double \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 153 of file backend\+\_\+iface\+\_\+fptr.\+hpp.
+

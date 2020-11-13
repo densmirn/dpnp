@@ -1,0 +1,1239 @@
+\hypertarget{group___b_a_c_k_e_n_d___a_p_i}{}\doxysection{Backend C++ library interface A\+PI}
+\label{group___b_a_c_k_e_n_d___a_p_i}\index{Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga006683c3ea08ca7c185e09fbf5ae7a7e}{M\+A\+C\+R\+O\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+2\+A\+R\+G\+\_\+1\+T\+Y\+P\+E\+\_\+\+OP}}(\+\_\+\+\_\+name\+\_\+\+\_\+,  \+\_\+\+\_\+operation\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Bitwise function {\bfseries{name}} \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga25e50b4a2572cad13d85f99dcbf22652}{M\+A\+C\+R\+O\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+1\+A\+R\+G\+\_\+1\+T\+Y\+P\+E\+\_\+\+OP}}(\+\_\+\+\_\+name\+\_\+\+\_\+,  \+\_\+\+\_\+operation1\+\_\+\+\_\+,  \+\_\+\+\_\+operation2\+\_\+\+\_\+)
+\begin{DoxyCompactList}\small\item\em Element wise function {\bfseries{name}} \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gaae520250ac00985feaadcbd984c30ab1}{Queue\+Options}} \+: uint32\+\_\+t \{ \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ggaae520250ac00985feaadcbd984c30ab1acc7580c6d50ad116c1c0deb3f7adf468}{Queue\+Options\+::\+C\+P\+U\+\_\+\+S\+E\+L\+E\+C\+T\+OR}}, 
+\mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ggaae520250ac00985feaadcbd984c30ab1a332c42fe262bf0855ca1de84d27049b1}{Queue\+Options\+::\+G\+P\+U\+\_\+\+S\+E\+L\+E\+C\+T\+OR}}
+ \}
+\begin{DoxyCompactList}\small\item\em S\+Y\+CL queue initialization selector. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gaa395545039faec446a1d206b139b1afc}{dpnp\+\_\+queue\+\_\+initialize\+\_\+c}} (\mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gaae520250ac00985feaadcbd984c30ab1}{Queue\+Options}} selector)
+\begin{DoxyCompactList}\small\item\em S\+Y\+CL queue initialization. \end{DoxyCompactList}\item 
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT size\+\_\+t \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gadb54ac533c7a0dba465246f7e5a89161}{dpnp\+\_\+queue\+\_\+is\+\_\+cpu\+\_\+c}} ()
+\begin{DoxyCompactList}\small\item\em S\+Y\+CL queue device status. \end{DoxyCompactList}\item 
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT char $\ast$ \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga8805a5bf88725bc644760a3eb4f73c3e}{dpnp\+\_\+memory\+\_\+alloc\+\_\+c}} (size\+\_\+t size\+\_\+in\+\_\+bytes)
+\begin{DoxyCompactList}\small\item\em S\+Y\+CL queue memory allocation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga9022041d2d7b2b298387fbe0bd8a6a0a}{dpnp\+\_\+arange\+\_\+c}} (size\+\_\+t start, size\+\_\+t step, void $\ast$result1, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Array initialization. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gacfca1fa3eb06e617f0df4bcc50989a71}{dpnp\+\_\+matmul\+\_\+c}} (void $\ast$array1, void $\ast$array2, void $\ast$result1, size\+\_\+t size\+\_\+m, size\+\_\+t size\+\_\+n, size\+\_\+t size\+\_\+k)
+\begin{DoxyCompactList}\small\item\em Matrix multiplication. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga6eb90add5d3c9d23d67c6454d8927486}{custom\+\_\+elemwise\+\_\+absolute\+\_\+c}} (void $\ast$array1\+\_\+in, void $\ast$result1, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em absolute function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type\+\_\+input1 , typename \+\_\+\+Data\+Type\+\_\+input2 , typename \+\_\+\+Data\+Type\+\_\+output $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga3e12b0f82e5b51f2d600375189cf5dab}{dpnp\+\_\+dot\+\_\+c}} (void $\ast$array1, void $\ast$array2, void $\ast$result1, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Custom implementation of dot function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga8ff34bb5354ba7eb301212c8879dec8f}{custom\+\_\+sum\+\_\+c}} (void $\ast$array, void $\ast$result, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Sum of array elements. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga67727c217c9e86877da1dbbe78050982}{custom\+\_\+prod\+\_\+c}} (void $\ast$array, void $\ast$result, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Product of array elements. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type , typename \+\_\+\+Result\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga475ec602ae5278c0fe62d8cf6a6976fd}{dpnp\+\_\+eig\+\_\+c}} (const void $\ast$array\+\_\+in, void $\ast$result1, void $\ast$result2, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Compute the eigenvalues and right eigenvectors of a square array. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type , typename \+\_\+\+Result\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga400798a8e7735b565256cab607e6e7e9}{dpnp\+\_\+eigvals\+\_\+c}} (const void $\ast$array\+\_\+in, void $\ast$result1, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Compute the eigenvalues of a square array. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type , typename \+\_\+idx\+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga3a1833983457345e7d898f998a484503}{custom\+\_\+argsort\+\_\+c}} (void $\ast$array, void $\ast$result, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em math library implementation of argsort function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga45f2d808e399bd7776ec76dc14d4ee8d}{custom\+\_\+sort\+\_\+c}} (void $\ast$array, void $\ast$result, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em math library implementation of sort function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga4717814b002b27a1b320234c4241fa1d}{custom\+\_\+cholesky\+\_\+c}} (void $\ast$array1\+\_\+in, void $\ast$result1, size\+\_\+t $\ast$shape)
+\begin{DoxyCompactList}\small\item\em math library implementation of cholesky function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type\+\_\+input1 , typename \+\_\+\+Data\+Type\+\_\+input2 , typename \+\_\+\+Data\+Type\+\_\+output $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga5d2bf76610e716a0fcc4550d0d133819}{dpnp\+\_\+correlate\+\_\+c}} (void $\ast$array1\+\_\+in, void $\ast$array2\+\_\+in, void $\ast$result, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em correlate function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga2220a585b7e77bb5ff79bd803cea03c9}{custom\+\_\+cov\+\_\+c}} (void $\ast$array1\+\_\+in, void $\ast$result1, size\+\_\+t nrows, size\+\_\+t ncols)
+\begin{DoxyCompactList}\small\item\em Custom implementation of cov function with math library and P\+S\+TL. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gafeeeea29c8b6b1b700da6ada8a7139f7}{custom\+\_\+det\+\_\+c}} (void $\ast$array1\+\_\+in, void $\ast$result1, size\+\_\+t $\ast$shape, size\+\_\+t ndim)
+\begin{DoxyCompactList}\small\item\em math library implementation of det function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga9a72b11b8be3d96e4a9c139467b72f0e}{custom\+\_\+matrix\+\_\+rank\+\_\+c}} (void $\ast$array1\+\_\+in, void $\ast$result1, size\+\_\+t $\ast$shape, size\+\_\+t ndim)
+\begin{DoxyCompactList}\small\item\em math library implementation of matrix\+\_\+rank function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga97a198bf3ca3b43c5d3a8a224fb047f8}{custom\+\_\+max\+\_\+c}} (void $\ast$array1\+\_\+in, void $\ast$result1, const size\+\_\+t $\ast$shape, size\+\_\+t ndim, const size\+\_\+t $\ast$axis, size\+\_\+t naxis)
+\begin{DoxyCompactList}\small\item\em math library implementation of max function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type , typename \+\_\+\+Result\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga55969d14f6331f88351874b389fca9bf}{custom\+\_\+mean\+\_\+c}} (void $\ast$array, void $\ast$result, const size\+\_\+t $\ast$shape, size\+\_\+t ndim, const size\+\_\+t $\ast$axis, size\+\_\+t naxis)
+\begin{DoxyCompactList}\small\item\em math library implementation of mean function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type , typename \+\_\+\+Result\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga1ccaac7bd15d535c9f192c466fbc8c36}{custom\+\_\+median\+\_\+c}} (void $\ast$array, void $\ast$result, const size\+\_\+t $\ast$shape, size\+\_\+t ndim, const size\+\_\+t $\ast$axis, size\+\_\+t naxis)
+\begin{DoxyCompactList}\small\item\em math library implementation of median function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga59bfcff1eed86fd6231190f4df0d63b2}{custom\+\_\+min\+\_\+c}} (void $\ast$array, void $\ast$result, const size\+\_\+t $\ast$shape, size\+\_\+t ndim, const size\+\_\+t $\ast$axis, size\+\_\+t naxis)
+\begin{DoxyCompactList}\small\item\em math library implementation of min function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type , typename \+\_\+idx\+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gac3d430f8684636f732db88d249cf5136}{custom\+\_\+argmax\+\_\+c}} (void $\ast$array, void $\ast$result, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em math library implementation of argmax function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type , typename \+\_\+idx\+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gad8016751df3e4b5aa1add2fa89b194ec}{custom\+\_\+argmin\+\_\+c}} (void $\ast$array, void $\ast$result, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em math library implementation of argmin function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type , typename \+\_\+\+Result\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gab285878b25ce10f6e484f7b3cd0ac7d7}{custom\+\_\+std\+\_\+c}} (void $\ast$array, void $\ast$result, const size\+\_\+t $\ast$shape, size\+\_\+t ndim, const size\+\_\+t $\ast$axis, size\+\_\+t naxis, size\+\_\+t ddof)
+\begin{DoxyCompactList}\small\item\em math library implementation of std function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type , typename \+\_\+\+Result\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gacee22db8524d81e20c80965b6d7aff78}{custom\+\_\+var\+\_\+c}} (void $\ast$array, void $\ast$result, const size\+\_\+t $\ast$shape, size\+\_\+t ndim, const size\+\_\+t $\ast$axis, size\+\_\+t naxis, size\+\_\+t ddof)
+\begin{DoxyCompactList}\small\item\em math library implementation of var function \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga15b3badb539f731cdf0af40797537a4a}{dpnp\+\_\+invert\+\_\+c}} (void $\ast$array1\+\_\+in, void $\ast$result, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em Implementation of invert function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type\+\_\+input1 , typename \+\_\+\+Data\+Type\+\_\+input2 , typename \+\_\+\+Data\+Type\+\_\+output $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga9b0a8bd754e22b36d06643faeef1587a}{dpnp\+\_\+floor\+\_\+divide\+\_\+c}} (void $\ast$array1\+\_\+in, void $\ast$array2\+\_\+in, void $\ast$result1, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em floor\+\_\+divide function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type\+\_\+input , typename \+\_\+\+Data\+Type\+\_\+output $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gae0a0a501906ca5f45013707afbb1f400}{dpnp\+\_\+modf\+\_\+c}} (void $\ast$array1\+\_\+in, void $\ast$result1\+\_\+out, void $\ast$result2\+\_\+out, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em modf function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type\+\_\+input1 , typename \+\_\+\+Data\+Type\+\_\+input2 , typename \+\_\+\+Data\+Type\+\_\+output $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga761edd5b5a0b3a74bd9a7b1672284b39}{dpnp\+\_\+remainder\+\_\+c}} (void $\ast$array1\+\_\+in, void $\ast$array2\+\_\+in, void $\ast$result1, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em remainder function. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gabf70014bd0a0a7630864cbbb9e2cce2c}{custom\+\_\+elemwise\+\_\+transpose\+\_\+c}} (void $\ast$array1\+\_\+in, const std\+::vector$<$ long $>$ \&input\+\_\+shape, const std\+::vector$<$ long $>$ \&result\+\_\+shape, const std\+::vector$<$ long $>$ \&permute\+\_\+axes, void $\ast$result1, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em transpose function. Permute axes of the input to the output with elements permutation. \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gaa7bca3ce07f3cba8ca9d63d93287ad91}{custom\+\_\+rng\+\_\+gaussian\+\_\+c}} (void $\ast$result, \+\_\+\+Data\+Type mean, \+\_\+\+Data\+Type stddev, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em math library implementation of random number generator (gaussian continious distribution) \end{DoxyCompactList}\item 
+{\footnotesize template$<$typename \+\_\+\+Data\+Type $>$ }\\I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga00ec0600e9458837339fcf362e90b9ef}{custom\+\_\+rng\+\_\+uniform\+\_\+c}} (void $\ast$result, long low, long high, size\+\_\+t size)
+\begin{DoxyCompactList}\small\item\em math library implementation of random number generator (uniform distribution) \end{DoxyCompactList}\item 
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga0038297e25b24c5eb47820c31f12be8d}{dpnp\+\_\+srand\+\_\+c}} (size\+\_\+t seed=1)
+\begin{DoxyCompactList}\small\item\em initializer for basic random number generator. \end{DoxyCompactList}\item 
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga52f631e01afd73cc5573f9e8f61bd78f}{D\+P\+N\+P\+Func\+Data\+\_\+t}} \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga5d37203d4448c22f7b046710d639fd4e}{get\+\_\+dpnp\+\_\+function\+\_\+ptr}} (\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga8b20590525bff7c7ce4f728d2021b558}{D\+P\+N\+P\+Func\+Name}} name, \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}{D\+P\+N\+P\+Func\+Type}} first\+\_\+type, \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}{D\+P\+N\+P\+Func\+Type}} second\+\_\+type=D\+P\+N\+P\+Func\+Type\+::\+D\+P\+N\+P\+\_\+\+F\+T\+\_\+\+N\+O\+NE)
+\begin{DoxyCompactList}\small\item\em get runtime pointer to selected function \end{DoxyCompactList}\item 
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void $\ast$ \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gaa4be84f68fb1e6f7a0706e22378d54e0}{get\+\_\+dpnp\+\_\+function\+\_\+ptr1}} (\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}{D\+P\+N\+P\+Func\+Type}} \&result\+\_\+type, \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga8b20590525bff7c7ce4f728d2021b558}{D\+P\+N\+P\+Func\+Name}} name, \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}{D\+P\+N\+P\+Func\+Type}} first\+\_\+type, \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}{D\+P\+N\+P\+Func\+Type}} second\+\_\+type=D\+P\+N\+P\+Func\+Type\+::\+D\+P\+N\+P\+\_\+\+F\+T\+\_\+\+N\+O\+NE)
+\begin{DoxyCompactList}\small\item\em get runtime pointer to selected function \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This section describes Backend A\+PI. 
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga25e50b4a2572cad13d85f99dcbf22652}\label{group___b_a_c_k_e_n_d___a_p_i_ga25e50b4a2572cad13d85f99dcbf22652}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!MACRO\_CUSTOM\_1ARG\_1TYPE\_OP@{MACRO\_CUSTOM\_1ARG\_1TYPE\_OP}}
+\index{MACRO\_CUSTOM\_1ARG\_1TYPE\_OP@{MACRO\_CUSTOM\_1ARG\_1TYPE\_OP}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{MACRO\_CUSTOM\_1ARG\_1TYPE\_OP}{MACRO\_CUSTOM\_1ARG\_1TYPE\_OP}}
+{\footnotesize\ttfamily \#define M\+A\+C\+R\+O\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+1\+A\+R\+G\+\_\+1\+T\+Y\+P\+E\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+name\+\_\+\+\_\+,  }\item[{}]{\+\_\+\+\_\+operation1\+\_\+\+\_\+,  }\item[{}]{\+\_\+\+\_\+operation2\+\_\+\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keyword}{template} <\textcolor{keyword}{typename} \_DataType>                                                                                      \(\backslash\)}
+\DoxyCodeLine{    INP\_DLLEXPORT \textcolor{keywordtype}{void} \_\_name\_\_(\textcolor{keywordtype}{void}* array1, \textcolor{keywordtype}{void}* result1, \textcolor{keywordtype}{size\_t} size);}
+
+\end{DoxyCode}
+
+
+Element wise function {\bfseries{name}} 
+
+{\bfseries{name}} function called with the S\+Y\+CL backend.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in the input array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 535 of file backend\+\_\+iface.\+hpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga006683c3ea08ca7c185e09fbf5ae7a7e}\label{group___b_a_c_k_e_n_d___a_p_i_ga006683c3ea08ca7c185e09fbf5ae7a7e}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!MACRO\_CUSTOM\_2ARG\_1TYPE\_OP@{MACRO\_CUSTOM\_2ARG\_1TYPE\_OP}}
+\index{MACRO\_CUSTOM\_2ARG\_1TYPE\_OP@{MACRO\_CUSTOM\_2ARG\_1TYPE\_OP}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{MACRO\_CUSTOM\_2ARG\_1TYPE\_OP}{MACRO\_CUSTOM\_2ARG\_1TYPE\_OP}}
+{\footnotesize\ttfamily \#define M\+A\+C\+R\+O\+\_\+\+C\+U\+S\+T\+O\+M\+\_\+2\+A\+R\+G\+\_\+1\+T\+Y\+P\+E\+\_\+\+OP(\begin{DoxyParamCaption}\item[{}]{\+\_\+\+\_\+name\+\_\+\+\_\+,  }\item[{}]{\+\_\+\+\_\+operation\+\_\+\+\_\+ }\end{DoxyParamCaption})}
+
+{\bfseries Value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{    \textcolor{keyword}{template} <\textcolor{keyword}{typename} \_DataType>                                                                                      \(\backslash\)}
+\DoxyCodeLine{    INP\_DLLEXPORT \textcolor{keywordtype}{void} \_\_name\_\_(\textcolor{keywordtype}{void}* array1\_in1, \textcolor{keywordtype}{void}* array2\_in, \textcolor{keywordtype}{void}* result1, \textcolor{keywordtype}{size\_t} size);}
+
+\end{DoxyCode}
+
+
+Bitwise function {\bfseries{name}} 
+
+{\bfseries{name}} function called with the S\+Y\+CL backend.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array1\+\_\+in} & First input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em array2\+\_\+in} & Second input array.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result1} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in the input array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 520 of file backend\+\_\+iface.\+hpp.
+
+
+
+\doxysubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_gaae520250ac00985feaadcbd984c30ab1}\label{group___b_a_c_k_e_n_d___a_p_i_gaae520250ac00985feaadcbd984c30ab1}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!QueueOptions@{QueueOptions}}
+\index{QueueOptions@{QueueOptions}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{QueueOptions}{QueueOptions}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gaae520250ac00985feaadcbd984c30ab1}{Queue\+Options}} \+: uint32\+\_\+t\hspace{0.3cm}{\ttfamily [strong]}}
+
+
+
+S\+Y\+CL queue initialization selector. 
+
+The structure defines the parameters that are used for the library initialization by \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gaa395545039faec446a1d206b139b1afc}{dpnp\+\_\+queue\+\_\+initialize}}. \begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{CPU\_SELECTOR@{CPU\_SELECTOR}!Backend C++ library interface API@{Backend C++ library interface API}}\index{Backend C++ library interface API@{Backend C++ library interface API}!CPU\_SELECTOR@{CPU\_SELECTOR}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ggaae520250ac00985feaadcbd984c30ab1acc7580c6d50ad116c1c0deb3f7adf468}\label{group___b_a_c_k_e_n_d___a_p_i_ggaae520250ac00985feaadcbd984c30ab1acc7580c6d50ad116c1c0deb3f7adf468}} 
+C\+P\+U\+\_\+\+S\+E\+L\+E\+C\+T\+OR&C\+PU side execution mode \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{GPU\_SELECTOR@{GPU\_SELECTOR}!Backend C++ library interface API@{Backend C++ library interface API}}\index{Backend C++ library interface API@{Backend C++ library interface API}!GPU\_SELECTOR@{GPU\_SELECTOR}}}\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ggaae520250ac00985feaadcbd984c30ab1a332c42fe262bf0855ca1de84d27049b1}\label{group___b_a_c_k_e_n_d___a_p_i_ggaae520250ac00985feaadcbd984c30ab1a332c42fe262bf0855ca1de84d27049b1}} 
+G\+P\+U\+\_\+\+S\+E\+L\+E\+C\+T\+OR&Intel G\+PU side execution mode \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+Definition at line 65 of file backend\+\_\+iface.\+hpp.
+
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_gac3d430f8684636f732db88d249cf5136}\label{group___b_a_c_k_e_n_d___a_p_i_gac3d430f8684636f732db88d249cf5136}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_argmax\_c@{custom\_argmax\_c}}
+\index{custom\_argmax\_c@{custom\_argmax\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_argmax\_c()}{custom\_argmax\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type , typename \+\_\+idx\+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+argmax\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array,  }\item[{void $\ast$}]{result,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+math library implementation of argmax function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array with data.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array with indeces.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in input array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file custom\+\_\+kernels\+\_\+searching.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_gad8016751df3e4b5aa1add2fa89b194ec}\label{group___b_a_c_k_e_n_d___a_p_i_gad8016751df3e4b5aa1add2fa89b194ec}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_argmin\_c@{custom\_argmin\_c}}
+\index{custom\_argmin\_c@{custom\_argmin\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_argmin\_c()}{custom\_argmin\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type , typename \+\_\+idx\+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+argmin\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array,  }\item[{void $\ast$}]{result,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+math library implementation of argmin function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array with data.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array with indeces.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in input array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 56 of file custom\+\_\+kernels\+\_\+searching.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga3a1833983457345e7d898f998a484503}\label{group___b_a_c_k_e_n_d___a_p_i_ga3a1833983457345e7d898f998a484503}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_argsort\_c@{custom\_argsort\_c}}
+\index{custom\_argsort\_c@{custom\_argsort\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_argsort\_c()}{custom\_argsort\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type , typename \+\_\+idx\+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+argsort\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array,  }\item[{void $\ast$}]{result,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+math library implementation of argsort function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array with data.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array with indeces.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in input arrays. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 53 of file custom\+\_\+kernels\+\_\+sorting.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga4717814b002b27a1b320234c4241fa1d}\label{group___b_a_c_k_e_n_d___a_p_i_ga4717814b002b27a1b320234c4241fa1d}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_cholesky\_c@{custom\_cholesky\_c}}
+\index{custom\_cholesky\_c@{custom\_cholesky\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_cholesky\_c()}{custom\_cholesky\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+cholesky\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1\+\_\+in,  }\item[{void $\ast$}]{result1,  }\item[{size\+\_\+t $\ast$}]{shape }\end{DoxyParamCaption})}
+
+
+
+math library implementation of cholesky function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array with data.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em shape} & Shape of input array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file custom\+\_\+kernels\+\_\+linalg.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga2220a585b7e77bb5ff79bd803cea03c9}\label{group___b_a_c_k_e_n_d___a_p_i_ga2220a585b7e77bb5ff79bd803cea03c9}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_cov\_c@{custom\_cov\_c}}
+\index{custom\_cov\_c@{custom\_cov\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_cov\_c()}{custom\_cov\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+cov\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1\+\_\+in,  }\item[{void $\ast$}]{result1,  }\item[{size\+\_\+t}]{nrows,  }\item[{size\+\_\+t}]{ncols }\end{DoxyParamCaption})}
+
+
+
+Custom implementation of cov function with math library and P\+S\+TL. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em nrows} & Number of rows in input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ncols} & Number of columns in input array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 51 of file custom\+\_\+kernels\+\_\+statistics.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{group___b_a_c_k_e_n_d___a_p_i_ga2220a585b7e77bb5ff79bd803cea03c9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_gafeeeea29c8b6b1b700da6ada8a7139f7}\label{group___b_a_c_k_e_n_d___a_p_i_gafeeeea29c8b6b1b700da6ada8a7139f7}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_det\_c@{custom\_det\_c}}
+\index{custom\_det\_c@{custom\_det\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_det\_c()}{custom\_det\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+det\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1\+\_\+in,  }\item[{void $\ast$}]{result1,  }\item[{size\+\_\+t $\ast$}]{shape,  }\item[{size\+\_\+t}]{ndim }\end{DoxyParamCaption})}
+
+
+
+math library implementation of det function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array with data.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em shape} & Shape of input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ndim} & Number of elements in shape. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 83 of file custom\+\_\+kernels\+\_\+linalg.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga6eb90add5d3c9d23d67c6454d8927486}\label{group___b_a_c_k_e_n_d___a_p_i_ga6eb90add5d3c9d23d67c6454d8927486}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_elemwise\_absolute\_c@{custom\_elemwise\_absolute\_c}}
+\index{custom\_elemwise\_absolute\_c@{custom\_elemwise\_absolute\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_elemwise\_absolute\_c()}{custom\_elemwise\_absolute\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+elemwise\+\_\+absolute\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1\+\_\+in,  }\item[{void $\ast$}]{result1,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+absolute function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array1\+\_\+in} & Input array.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result1} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in input arrays. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file custom\+\_\+kernels\+\_\+mathematical.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_gabf70014bd0a0a7630864cbbb9e2cce2c}\label{group___b_a_c_k_e_n_d___a_p_i_gabf70014bd0a0a7630864cbbb9e2cce2c}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_elemwise\_transpose\_c@{custom\_elemwise\_transpose\_c}}
+\index{custom\_elemwise\_transpose\_c@{custom\_elemwise\_transpose\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_elemwise\_transpose\_c()}{custom\_elemwise\_transpose\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+elemwise\+\_\+transpose\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1\+\_\+in,  }\item[{const std\+::vector$<$ long $>$ \&}]{input\+\_\+shape,  }\item[{const std\+::vector$<$ long $>$ \&}]{result\+\_\+shape,  }\item[{const std\+::vector$<$ long $>$ \&}]{permute\+\_\+axes,  }\item[{void $\ast$}]{result1,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+transpose function. Permute axes of the input to the output with elements permutation. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array1\+\_\+in} & Input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em input\+\_\+shape} & Input shape.\\
+\hline
+\mbox{\texttt{ in}}  & {\em result\+\_\+shape} & Output shape.\\
+\hline
+\mbox{\texttt{ in}}  & {\em permute\+\_\+axes} & Order of axis by it\textquotesingle{}s id as it should be presented in output.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result1} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in input arrays. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file custom\+\_\+kernels\+\_\+manipulation.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___b_a_c_k_e_n_d___a_p_i_gabf70014bd0a0a7630864cbbb9e2cce2c_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga9a72b11b8be3d96e4a9c139467b72f0e}\label{group___b_a_c_k_e_n_d___a_p_i_ga9a72b11b8be3d96e4a9c139467b72f0e}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_matrix\_rank\_c@{custom\_matrix\_rank\_c}}
+\index{custom\_matrix\_rank\_c@{custom\_matrix\_rank\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_matrix\_rank\_c()}{custom\_matrix\_rank\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+matrix\+\_\+rank\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1\+\_\+in,  }\item[{void $\ast$}]{result1,  }\item[{size\+\_\+t $\ast$}]{shape,  }\item[{size\+\_\+t}]{ndim }\end{DoxyParamCaption})}
+
+
+
+math library implementation of matrix\+\_\+rank function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array with data.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em shape} & Shape of input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ndim} & Number of elements in shape. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 186 of file custom\+\_\+kernels\+\_\+linalg.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga97a198bf3ca3b43c5d3a8a224fb047f8}\label{group___b_a_c_k_e_n_d___a_p_i_ga97a198bf3ca3b43c5d3a8a224fb047f8}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_max\_c@{custom\_max\_c}}
+\index{custom\_max\_c@{custom\_max\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_max\_c()}{custom\_max\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+max\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1\+\_\+in,  }\item[{void $\ast$}]{result1,  }\item[{const size\+\_\+t $\ast$}]{shape,  }\item[{size\+\_\+t}]{ndim,  }\item[{const size\+\_\+t $\ast$}]{axis,  }\item[{size\+\_\+t}]{naxis }\end{DoxyParamCaption})}
+
+
+
+math library implementation of max function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array with data.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em shape} & Shape of input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ndim} & Number of elements in shape.\\
+\hline
+\mbox{\texttt{ in}}  & {\em axis} & Axis.\\
+\hline
+\mbox{\texttt{ in}}  & {\em naxis} & Number of elements in axis. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 129 of file custom\+\_\+kernels\+\_\+statistics.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga55969d14f6331f88351874b389fca9bf}\label{group___b_a_c_k_e_n_d___a_p_i_ga55969d14f6331f88351874b389fca9bf}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_mean\_c@{custom\_mean\_c}}
+\index{custom\_mean\_c@{custom\_mean\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_mean\_c()}{custom\_mean\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type , typename \+\_\+\+Result\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+mean\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array,  }\item[{void $\ast$}]{result,  }\item[{const size\+\_\+t $\ast$}]{shape,  }\item[{size\+\_\+t}]{ndim,  }\item[{const size\+\_\+t $\ast$}]{axis,  }\item[{size\+\_\+t}]{naxis }\end{DoxyParamCaption})}
+
+
+
+math library implementation of mean function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array with data.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em shape} & Shape of input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ndim} & Number of elements in shape.\\
+\hline
+\mbox{\texttt{ in}}  & {\em axis} & Axis.\\
+\hline
+\mbox{\texttt{ in}}  & {\em naxis} & Number of elements in axis. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 169 of file custom\+\_\+kernels\+\_\+statistics.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=318pt]{group___b_a_c_k_e_n_d___a_p_i_ga55969d14f6331f88351874b389fca9bf_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga1ccaac7bd15d535c9f192c466fbc8c36}\label{group___b_a_c_k_e_n_d___a_p_i_ga1ccaac7bd15d535c9f192c466fbc8c36}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_median\_c@{custom\_median\_c}}
+\index{custom\_median\_c@{custom\_median\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_median\_c()}{custom\_median\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type , typename \+\_\+\+Result\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+median\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array,  }\item[{void $\ast$}]{result,  }\item[{const size\+\_\+t $\ast$}]{shape,  }\item[{size\+\_\+t}]{ndim,  }\item[{const size\+\_\+t $\ast$}]{axis,  }\item[{size\+\_\+t}]{naxis }\end{DoxyParamCaption})}
+
+
+
+math library implementation of median function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array with data.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em shape} & Shape of input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ndim} & Number of elements in shape.\\
+\hline
+\mbox{\texttt{ in}}  & {\em axis} & Axis.\\
+\hline
+\mbox{\texttt{ in}}  & {\em naxis} & Number of elements in axis. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 213 of file custom\+\_\+kernels\+\_\+statistics.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=325pt]{group___b_a_c_k_e_n_d___a_p_i_ga1ccaac7bd15d535c9f192c466fbc8c36_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga59bfcff1eed86fd6231190f4df0d63b2}\label{group___b_a_c_k_e_n_d___a_p_i_ga59bfcff1eed86fd6231190f4df0d63b2}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_min\_c@{custom\_min\_c}}
+\index{custom\_min\_c@{custom\_min\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_min\_c()}{custom\_min\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+min\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array,  }\item[{void $\ast$}]{result,  }\item[{const size\+\_\+t $\ast$}]{shape,  }\item[{size\+\_\+t}]{ndim,  }\item[{const size\+\_\+t $\ast$}]{axis,  }\item[{size\+\_\+t}]{naxis }\end{DoxyParamCaption})}
+
+
+
+math library implementation of min function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array with data.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em shape} & Shape of input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ndim} & Number of elements in shape.\\
+\hline
+\mbox{\texttt{ in}}  & {\em axis} & Axis.\\
+\hline
+\mbox{\texttt{ in}}  & {\em naxis} & Number of elements in axis. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 247 of file custom\+\_\+kernels\+\_\+statistics.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga67727c217c9e86877da1dbbe78050982}\label{group___b_a_c_k_e_n_d___a_p_i_ga67727c217c9e86877da1dbbe78050982}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_prod\_c@{custom\_prod\_c}}
+\index{custom\_prod\_c@{custom\_prod\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_prod\_c()}{custom\_prod\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+prod\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array,  }\item[{void $\ast$}]{result,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Product of array elements. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of input elements in {\ttfamily array}.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array contains one element. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 83 of file custom\+\_\+kernels\+\_\+reduction.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_gaa7bca3ce07f3cba8ca9d63d93287ad91}\label{group___b_a_c_k_e_n_d___a_p_i_gaa7bca3ce07f3cba8ca9d63d93287ad91}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_rng\_gaussian\_c@{custom\_rng\_gaussian\_c}}
+\index{custom\_rng\_gaussian\_c@{custom\_rng\_gaussian\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_rng\_gaussian\_c()}{custom\_rng\_gaussian\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+rng\+\_\+gaussian\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{result,  }\item[{\+\_\+\+Data\+Type}]{mean,  }\item[{\+\_\+\+Data\+Type}]{stddev,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+math library implementation of random number generator (gaussian continious distribution) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in {\ttfamily result} arrays.\\
+\hline
+\mbox{\texttt{ in}}  & {\em mean} & Mean value.\\
+\hline
+\mbox{\texttt{ in}}  & {\em stddev} & Standard deviation.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 107 of file custom\+\_\+kernels\+\_\+random.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga00ec0600e9458837339fcf362e90b9ef}\label{group___b_a_c_k_e_n_d___a_p_i_ga00ec0600e9458837339fcf362e90b9ef}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_rng\_uniform\_c@{custom\_rng\_uniform\_c}}
+\index{custom\_rng\_uniform\_c@{custom\_rng\_uniform\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_rng\_uniform\_c()}{custom\_rng\_uniform\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+rng\+\_\+uniform\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{result,  }\item[{long}]{low,  }\item[{long}]{high,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+math library implementation of random number generator (uniform distribution) 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em low} & Left bound of array values.\\
+\hline
+\mbox{\texttt{ in}}  & {\em high} & Right bound of array values.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in {\ttfamily result} array.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 122 of file custom\+\_\+kernels\+\_\+random.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga45f2d808e399bd7776ec76dc14d4ee8d}\label{group___b_a_c_k_e_n_d___a_p_i_ga45f2d808e399bd7776ec76dc14d4ee8d}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_sort\_c@{custom\_sort\_c}}
+\index{custom\_sort\_c@{custom\_sort\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_sort\_c()}{custom\_sort\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+sort\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array,  }\item[{void $\ast$}]{result,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+math library implementation of sort function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array with data.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array with indeces.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in input arrays. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 90 of file custom\+\_\+kernels\+\_\+sorting.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_gab285878b25ce10f6e484f7b3cd0ac7d7}\label{group___b_a_c_k_e_n_d___a_p_i_gab285878b25ce10f6e484f7b3cd0ac7d7}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_std\_c@{custom\_std\_c}}
+\index{custom\_std\_c@{custom\_std\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_std\_c()}{custom\_std\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type , typename \+\_\+\+Result\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+std\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array,  }\item[{void $\ast$}]{result,  }\item[{const size\+\_\+t $\ast$}]{shape,  }\item[{size\+\_\+t}]{ndim,  }\item[{const size\+\_\+t $\ast$}]{axis,  }\item[{size\+\_\+t}]{naxis,  }\item[{size\+\_\+t}]{ddof }\end{DoxyParamCaption})}
+
+
+
+math library implementation of std function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array with data.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array with indeces.\\
+\hline
+\mbox{\texttt{ in}}  & {\em shape} & Shape of input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ndim} & Number of elements in shape.\\
+\hline
+\mbox{\texttt{ in}}  & {\em axis} & Axis.\\
+\hline
+\mbox{\texttt{ in}}  & {\em naxis} & Number of elements in axis.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ddof} & Delta degrees of freedom. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 438 of file custom\+\_\+kernels\+\_\+statistics.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{group___b_a_c_k_e_n_d___a_p_i_gab285878b25ce10f6e484f7b3cd0ac7d7_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga8ff34bb5354ba7eb301212c8879dec8f}\label{group___b_a_c_k_e_n_d___a_p_i_ga8ff34bb5354ba7eb301212c8879dec8f}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_sum\_c@{custom\_sum\_c}}
+\index{custom\_sum\_c@{custom\_sum\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_sum\_c()}{custom\_sum\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+sum\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array,  }\item[{void $\ast$}]{result,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Sum of array elements. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of input elements in {\ttfamily array}.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array contains one element. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 39 of file custom\+\_\+kernels\+\_\+reduction.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_gacee22db8524d81e20c80965b6d7aff78}\label{group___b_a_c_k_e_n_d___a_p_i_gacee22db8524d81e20c80965b6d7aff78}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!custom\_var\_c@{custom\_var\_c}}
+\index{custom\_var\_c@{custom\_var\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{custom\_var\_c()}{custom\_var\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type , typename \+\_\+\+Result\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void custom\+\_\+var\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array,  }\item[{void $\ast$}]{result,  }\item[{const size\+\_\+t $\ast$}]{shape,  }\item[{size\+\_\+t}]{ndim,  }\item[{const size\+\_\+t $\ast$}]{axis,  }\item[{size\+\_\+t}]{naxis,  }\item[{size\+\_\+t}]{ddof }\end{DoxyParamCaption})}
+
+
+
+math library implementation of var function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array} & Input array with data.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array with indeces.\\
+\hline
+\mbox{\texttt{ in}}  & {\em shape} & Shape of input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ndim} & Number of elements in shape.\\
+\hline
+\mbox{\texttt{ in}}  & {\em axis} & Axis.\\
+\hline
+\mbox{\texttt{ in}}  & {\em naxis} & Number of elements in axis.\\
+\hline
+\mbox{\texttt{ in}}  & {\em ddof} & Delta degrees of freedom. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 458 of file custom\+\_\+kernels\+\_\+statistics.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=307pt]{group___b_a_c_k_e_n_d___a_p_i_gacee22db8524d81e20c80965b6d7aff78_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga9022041d2d7b2b298387fbe0bd8a6a0a}\label{group___b_a_c_k_e_n_d___a_p_i_ga9022041d2d7b2b298387fbe0bd8a6a0a}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_arange\_c@{dpnp\_arange\_c}}
+\index{dpnp\_arange\_c@{dpnp\_arange\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_arange\_c()}{dpnp\_arange\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void dpnp\+\_\+arange\+\_\+c (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{start,  }\item[{size\+\_\+t}]{step,  }\item[{void $\ast$}]{result1,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Array initialization. 
+
+Input array, step based, initialization procedure.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em start} & Start of initialization sequence\\
+\hline
+\mbox{\texttt{ in}}  & {\em step} & Step for initialization sequence\\
+\hline
+\mbox{\texttt{ out}}  & {\em result1} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in input arrays. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 256 of file custom\+\_\+kernels\+\_\+elemwise.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga5d2bf76610e716a0fcc4550d0d133819}\label{group___b_a_c_k_e_n_d___a_p_i_ga5d2bf76610e716a0fcc4550d0d133819}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_correlate\_c@{dpnp\_correlate\_c}}
+\index{dpnp\_correlate\_c@{dpnp\_correlate\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_correlate\_c()}{dpnp\_correlate\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type\+\_\+input1 , typename \+\_\+\+Data\+Type\+\_\+input2 , typename \+\_\+\+Data\+Type\+\_\+output $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void dpnp\+\_\+correlate\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1\+\_\+in,  }\item[{void $\ast$}]{array2\+\_\+in,  }\item[{void $\ast$}]{result,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+correlate function 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array1\+\_\+in} & Input array 1.\\
+\hline
+\mbox{\texttt{ in}}  & {\em array2\+\_\+in} & Input array 2.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in input arrays. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 40 of file custom\+\_\+kernels\+\_\+statistics.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga3e12b0f82e5b51f2d600375189cf5dab}\label{group___b_a_c_k_e_n_d___a_p_i_ga3e12b0f82e5b51f2d600375189cf5dab}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_dot\_c@{dpnp\_dot\_c}}
+\index{dpnp\_dot\_c@{dpnp\_dot\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_dot\_c()}{dpnp\_dot\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type\+\_\+input1 , typename \+\_\+\+Data\+Type\+\_\+input2 , typename \+\_\+\+Data\+Type\+\_\+output $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void dpnp\+\_\+dot\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1,  }\item[{void $\ast$}]{array2,  }\item[{void $\ast$}]{result1,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Custom implementation of dot function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array1} & Input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em array2} & Input array.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result1} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in input arrays. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 118 of file custom\+\_\+kernels.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{group___b_a_c_k_e_n_d___a_p_i_ga3e12b0f82e5b51f2d600375189cf5dab_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga475ec602ae5278c0fe62d8cf6a6976fd}\label{group___b_a_c_k_e_n_d___a_p_i_ga475ec602ae5278c0fe62d8cf6a6976fd}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_eig\_c@{dpnp\_eig\_c}}
+\index{dpnp\_eig\_c@{dpnp\_eig\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_eig\_c()}{dpnp\_eig\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type , typename \+\_\+\+Result\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void dpnp\+\_\+eig\+\_\+c (\begin{DoxyParamCaption}\item[{const void $\ast$}]{array\+\_\+in,  }\item[{void $\ast$}]{result1,  }\item[{void $\ast$}]{result2,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Compute the eigenvalues and right eigenvectors of a square array. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array\+\_\+in} & Input array\mbox{[}size\mbox{]}\mbox{[}size\mbox{]}\\
+\hline
+\mbox{\texttt{ out}}  & {\em result1} & The eigenvalues, each repeated according to its multiplicity\\
+\hline
+\mbox{\texttt{ out}}  & {\em result2} & The normalized (unit “length”) eigenvectors\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & One dimension of square \mbox{[}size\mbox{]}\mbox{[}size\mbox{]} array \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 180 of file custom\+\_\+kernels.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{group___b_a_c_k_e_n_d___a_p_i_ga475ec602ae5278c0fe62d8cf6a6976fd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga400798a8e7735b565256cab607e6e7e9}\label{group___b_a_c_k_e_n_d___a_p_i_ga400798a8e7735b565256cab607e6e7e9}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_eigvals\_c@{dpnp\_eigvals\_c}}
+\index{dpnp\_eigvals\_c@{dpnp\_eigvals\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_eigvals\_c()}{dpnp\_eigvals\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type , typename \+\_\+\+Result\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void dpnp\+\_\+eigvals\+\_\+c (\begin{DoxyParamCaption}\item[{const void $\ast$}]{array\+\_\+in,  }\item[{void $\ast$}]{result1,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Compute the eigenvalues of a square array. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array\+\_\+in} & Input array\mbox{[}size\mbox{]}\mbox{[}size\mbox{]}\\
+\hline
+\mbox{\texttt{ out}}  & {\em result1} & The eigenvalues, each repeated according to its multiplicity\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & One dimension of square \mbox{[}size\mbox{]}\mbox{[}size\mbox{]} array \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 242 of file custom\+\_\+kernels.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=313pt]{group___b_a_c_k_e_n_d___a_p_i_ga400798a8e7735b565256cab607e6e7e9_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga9b0a8bd754e22b36d06643faeef1587a}\label{group___b_a_c_k_e_n_d___a_p_i_ga9b0a8bd754e22b36d06643faeef1587a}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_floor\_divide\_c@{dpnp\_floor\_divide\_c}}
+\index{dpnp\_floor\_divide\_c@{dpnp\_floor\_divide\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_floor\_divide\_c()}{dpnp\_floor\_divide\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type\+\_\+input1 , typename \+\_\+\+Data\+Type\+\_\+input2 , typename \+\_\+\+Data\+Type\+\_\+output $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void dpnp\+\_\+floor\+\_\+divide\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1\+\_\+in,  }\item[{void $\ast$}]{array2\+\_\+in,  }\item[{void $\ast$}]{result1,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+floor\+\_\+divide function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array1\+\_\+in} & Input array 1.\\
+\hline
+\mbox{\texttt{ in}}  & {\em array2\+\_\+in} & Input array 2.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result1} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in input arrays. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 90 of file custom\+\_\+kernels\+\_\+mathematical.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga15b3badb539f731cdf0af40797537a4a}\label{group___b_a_c_k_e_n_d___a_p_i_ga15b3badb539f731cdf0af40797537a4a}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_invert\_c@{dpnp\_invert\_c}}
+\index{dpnp\_invert\_c@{dpnp\_invert\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_invert\_c()}{dpnp\_invert\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void dpnp\+\_\+invert\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1\+\_\+in,  }\item[{void $\ast$}]{result,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+Implementation of invert function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array1\+\_\+in} & Input array.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result1} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in the input array. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 36 of file custom\+\_\+kernels\+\_\+bitwise.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_gacfca1fa3eb06e617f0df4bcc50989a71}\label{group___b_a_c_k_e_n_d___a_p_i_gacfca1fa3eb06e617f0df4bcc50989a71}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_matmul\_c@{dpnp\_matmul\_c}}
+\index{dpnp\_matmul\_c@{dpnp\_matmul\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_matmul\_c()}{dpnp\_matmul\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void dpnp\+\_\+matmul\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1,  }\item[{void $\ast$}]{array2,  }\item[{void $\ast$}]{result1,  }\item[{size\+\_\+t}]{size\+\_\+m,  }\item[{size\+\_\+t}]{size\+\_\+n,  }\item[{size\+\_\+t}]{size\+\_\+k }\end{DoxyParamCaption})}
+
+
+
+Matrix multiplication. 
+
+Matrix multiplication procedure. Works with 2-\/D matrices
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array1} & Input array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em array2} & Input array.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result1} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in input arrays. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 42 of file custom\+\_\+kernels.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga8805a5bf88725bc644760a3eb4f73c3e}\label{group___b_a_c_k_e_n_d___a_p_i_ga8805a5bf88725bc644760a3eb4f73c3e}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_memory\_alloc\_c@{dpnp\_memory\_alloc\_c}}
+\index{dpnp\_memory\_alloc\_c@{dpnp\_memory\_alloc\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_memory\_alloc\_c()}{dpnp\_memory\_alloc\_c()}}
+{\footnotesize\ttfamily I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT char$\ast$ dpnp\+\_\+memory\+\_\+alloc\+\_\+c (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{size\+\_\+in\+\_\+bytes }\end{DoxyParamCaption})}
+
+
+
+S\+Y\+CL queue memory allocation. 
+
+Memory allocation on the S\+Y\+CL backend.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em size\+\_\+in\+\_\+bytes} & Number of bytes for requested memory allocation.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+A pointer to newly created memory on \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gaa395545039faec446a1d206b139b1afc}{initialized S\+Y\+CL device}}. 
+\end{DoxyReturn}
+
+
+Definition at line 38 of file memory\+\_\+sycl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___b_a_c_k_e_n_d___a_p_i_ga8805a5bf88725bc644760a3eb4f73c3e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_gae0a0a501906ca5f45013707afbb1f400}\label{group___b_a_c_k_e_n_d___a_p_i_gae0a0a501906ca5f45013707afbb1f400}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_modf\_c@{dpnp\_modf\_c}}
+\index{dpnp\_modf\_c@{dpnp\_modf\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_modf\_c()}{dpnp\_modf\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type\+\_\+input , typename \+\_\+\+Data\+Type\+\_\+output $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void dpnp\+\_\+modf\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1\+\_\+in,  }\item[{void $\ast$}]{result1\+\_\+out,  }\item[{void $\ast$}]{result2\+\_\+out,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+modf function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array1\+\_\+in} & Input array.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result1\+\_\+out} & Output array 1.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result2\+\_\+out} & Output array 2.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in input arrays. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 132 of file custom\+\_\+kernels\+\_\+mathematical.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_gaa395545039faec446a1d206b139b1afc}\label{group___b_a_c_k_e_n_d___a_p_i_gaa395545039faec446a1d206b139b1afc}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_queue\_initialize\_c@{dpnp\_queue\_initialize\_c}}
+\index{dpnp\_queue\_initialize\_c@{dpnp\_queue\_initialize\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_queue\_initialize\_c()}{dpnp\_queue\_initialize\_c()}}
+{\footnotesize\ttfamily I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void dpnp\+\_\+queue\+\_\+initialize\+\_\+c (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gaae520250ac00985feaadcbd984c30ab1}{Queue\+Options}}}]{selector }\end{DoxyParamCaption})}
+
+
+
+S\+Y\+CL queue initialization. 
+
+Global S\+Y\+CL queue initialization.
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em selector} & Select type \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gaae520250ac00985feaadcbd984c30ab1}{Queue\+Options}} of the S\+Y\+CL queue. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 143 of file queue\+\_\+sycl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___b_a_c_k_e_n_d___a_p_i_gaa395545039faec446a1d206b139b1afc_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_gadb54ac533c7a0dba465246f7e5a89161}\label{group___b_a_c_k_e_n_d___a_p_i_gadb54ac533c7a0dba465246f7e5a89161}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_queue\_is\_cpu\_c@{dpnp\_queue\_is\_cpu\_c}}
+\index{dpnp\_queue\_is\_cpu\_c@{dpnp\_queue\_is\_cpu\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_queue\_is\_cpu\_c()}{dpnp\_queue\_is\_cpu\_c()}}
+{\footnotesize\ttfamily I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT size\+\_\+t dpnp\+\_\+queue\+\_\+is\+\_\+cpu\+\_\+c (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+S\+Y\+CL queue device status. 
+
+Return 1 if current queue is related to cpu or host device. return 0 otherwise. 
+
+Definition at line 148 of file queue\+\_\+sycl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{group___b_a_c_k_e_n_d___a_p_i_gadb54ac533c7a0dba465246f7e5a89161_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga761edd5b5a0b3a74bd9a7b1672284b39}\label{group___b_a_c_k_e_n_d___a_p_i_ga761edd5b5a0b3a74bd9a7b1672284b39}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_remainder\_c@{dpnp\_remainder\_c}}
+\index{dpnp\_remainder\_c@{dpnp\_remainder\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_remainder\_c()}{dpnp\_remainder\_c()}}
+{\footnotesize\ttfamily template$<$typename \+\_\+\+Data\+Type\+\_\+input1 , typename \+\_\+\+Data\+Type\+\_\+input2 , typename \+\_\+\+Data\+Type\+\_\+output $>$ \\
+I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void dpnp\+\_\+remainder\+\_\+c (\begin{DoxyParamCaption}\item[{void $\ast$}]{array1\+\_\+in,  }\item[{void $\ast$}]{array2\+\_\+in,  }\item[{void $\ast$}]{result1,  }\item[{size\+\_\+t}]{size }\end{DoxyParamCaption})}
+
+
+
+remainder function. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em array1\+\_\+in} & Input array 1.\\
+\hline
+\mbox{\texttt{ in}}  & {\em array2\+\_\+in} & Input array 2.\\
+\hline
+\mbox{\texttt{ out}}  & {\em result1} & Output array.\\
+\hline
+\mbox{\texttt{ in}}  & {\em size} & Number of elements in input arrays. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 169 of file custom\+\_\+kernels\+\_\+mathematical.\+cpp.
+
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga0038297e25b24c5eb47820c31f12be8d}\label{group___b_a_c_k_e_n_d___a_p_i_ga0038297e25b24c5eb47820c31f12be8d}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!dpnp\_srand\_c@{dpnp\_srand\_c}}
+\index{dpnp\_srand\_c@{dpnp\_srand\_c}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{dpnp\_srand\_c()}{dpnp\_srand\_c()}}
+{\footnotesize\ttfamily I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void dpnp\+\_\+srand\+\_\+c (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{seed = {\ttfamily 1} }\end{DoxyParamCaption})}
+
+
+
+initializer for basic random number generator. 
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em seed} & The seed value. \\
+\hline
+\end{DoxyParams}
+
+
+Definition at line 153 of file queue\+\_\+sycl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=310pt]{group___b_a_c_k_e_n_d___a_p_i_ga0038297e25b24c5eb47820c31f12be8d_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_ga5d37203d4448c22f7b046710d639fd4e}\label{group___b_a_c_k_e_n_d___a_p_i_ga5d37203d4448c22f7b046710d639fd4e}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!get\_dpnp\_function\_ptr@{get\_dpnp\_function\_ptr}}
+\index{get\_dpnp\_function\_ptr@{get\_dpnp\_function\_ptr}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{get\_dpnp\_function\_ptr()}{get\_dpnp\_function\_ptr()}}
+{\footnotesize\ttfamily I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga52f631e01afd73cc5573f9e8f61bd78f}{D\+P\+N\+P\+Func\+Data\+\_\+t}} get\+\_\+dpnp\+\_\+function\+\_\+ptr (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga8b20590525bff7c7ce4f728d2021b558}{D\+P\+N\+P\+Func\+Name}}}]{name,  }\item[{\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}{D\+P\+N\+P\+Func\+Type}}}]{first\+\_\+type,  }\item[{\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}{D\+P\+N\+P\+Func\+Type}}}]{second\+\_\+type = {\ttfamily DPNPFuncType\+:\+:DPNP\+\_\+FT\+\_\+NONE} }\end{DoxyParamCaption})}
+
+
+
+get runtime pointer to selected function 
+
+Runtime pointer to the backend A\+PI function from storage map$<$name, map$<$first\+\_\+type, map$<$second\+\_\+type, D\+P\+N\+P\+Func\+Data\+\_\+t$>$$>$$>$
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ in}}  & {\em name} & Name of the function in storage \\
+\hline
+\mbox{\texttt{ in}}  & {\em first\+\_\+type} & First type of the storage \\
+\hline
+\mbox{\texttt{ in}}  & {\em second\+\_\+type} & Second type of the storage\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Struct \mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga52f631e01afd73cc5573f9e8f61bd78f}{D\+P\+N\+P\+Func\+Data\+\_\+t}} with information about the backend A\+PI function. 
+\end{DoxyReturn}
+
+
+Definition at line 44 of file backend\+\_\+iface\+\_\+fptr.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{group___b_a_c_k_e_n_d___a_p_i_ga5d37203d4448c22f7b046710d639fd4e_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{group___b_a_c_k_e_n_d___a_p_i_gaa4be84f68fb1e6f7a0706e22378d54e0}\label{group___b_a_c_k_e_n_d___a_p_i_gaa4be84f68fb1e6f7a0706e22378d54e0}} 
+\index{Backend C++ library interface API@{Backend C++ library interface API}!get\_dpnp\_function\_ptr1@{get\_dpnp\_function\_ptr1}}
+\index{get\_dpnp\_function\_ptr1@{get\_dpnp\_function\_ptr1}!Backend C++ library interface API@{Backend C++ library interface API}}
+\doxysubsubsection{\texorpdfstring{get\_dpnp\_function\_ptr1()}{get\_dpnp\_function\_ptr1()}}
+{\footnotesize\ttfamily I\+N\+P\+\_\+\+D\+L\+L\+E\+X\+P\+O\+RT void$\ast$ get\+\_\+dpnp\+\_\+function\+\_\+ptr1 (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}{D\+P\+N\+P\+Func\+Type}} \&}]{result\+\_\+type,  }\item[{\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_ga8b20590525bff7c7ce4f728d2021b558}{D\+P\+N\+P\+Func\+Name}}}]{name,  }\item[{\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}{D\+P\+N\+P\+Func\+Type}}}]{first\+\_\+type,  }\item[{\mbox{\hyperlink{group___b_a_c_k_e_n_d___f_u_n_c___p_t_r___a_p_i_gaec54569b58e937e84099479f078bce15}{D\+P\+N\+P\+Func\+Type}}}]{second\+\_\+type = {\ttfamily DPNPFuncType\+:\+:DPNP\+\_\+FT\+\_\+NONE} }\end{DoxyParamCaption})}
+
+
+
+get runtime pointer to selected function 
+
+Same interface function as \mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_ga5d37203d4448c22f7b046710d639fd4e}{get\+\_\+dpnp\+\_\+function\+\_\+ptr}} with a bit diffrent interface
+
+
+\begin{DoxyParams}[1]{Parameters}
+\mbox{\texttt{ out}}  & {\em result\+\_\+type} & Type of the result provided by the backend A\+PI function \\
+\hline
+\mbox{\texttt{ in}}  & {\em name} & Name of the function in storage \\
+\hline
+\mbox{\texttt{ in}}  & {\em first\+\_\+type} & First type of the storage \\
+\hline
+\mbox{\texttt{ in}}  & {\em second\+\_\+type} & Second type of the storage\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+pointer to the backend A\+PI function. 
+\end{DoxyReturn}
+
+
+Definition at line 122 of file backend\+\_\+iface\+\_\+fptr.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=347pt]{group___b_a_c_k_e_n_d___a_p_i_gaa4be84f68fb1e6f7a0706e22378d54e0_cgraph}
+\end{center}
+\end{figure}

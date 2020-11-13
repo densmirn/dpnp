@@ -1,0 +1,158 @@
+\hypertarget{classbackend__sycl}{}\doxysection{backend\+\_\+sycl Class Reference}
+\label{classbackend__sycl}\index{backend\_sycl@{backend\_sycl}}
+
+
+{\ttfamily \#include $<$queue\+\_\+sycl.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classbackend__sycl_a30a828cca8de39d1b782696819820566}{backend\+\_\+sycl}} (const \mbox{\hyperlink{classbackend__sycl}{backend\+\_\+sycl}} \&)=delete
+\item 
+\mbox{\Hypertarget{classbackend__sycl_a6e59ae0859308fb7fad119b556ce4fcc}\label{classbackend__sycl_a6e59ae0859308fb7fad119b556ce4fcc}} 
+\mbox{\hyperlink{classbackend__sycl}{backend\+\_\+sycl}} \& {\bfseries operator=} (const \mbox{\hyperlink{classbackend__sycl}{backend\+\_\+sycl}} \&)=delete
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+static void \mbox{\hyperlink{classbackend__sycl_a299f7e42c037f7ae60853df21ecf4848}{backend\+\_\+sycl\+\_\+queue\+\_\+init}} (\mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gaae520250ac00985feaadcbd984c30ab1}{Queue\+Options}} selector=Queue\+Options\+::\+C\+P\+U\+\_\+\+S\+E\+L\+E\+C\+T\+OR)
+\item 
+static bool \mbox{\hyperlink{classbackend__sycl_acbfb9c9036f30c6ffdfdc773f80fc9e1}{backend\+\_\+sycl\+\_\+is\+\_\+cpu}} ()
+\item 
+static void \mbox{\hyperlink{classbackend__sycl_aa19e6be66be2be23d07b588adc1ac919}{backend\+\_\+sycl\+\_\+rng\+\_\+engine\+\_\+init}} (size\+\_\+t seed=1)
+\item 
+static cl\+::sycl\+::queue \& \mbox{\hyperlink{classbackend__sycl_ae542c859b7075e058f14197b025a1b4b}{get\+\_\+queue}} ()
+\item 
+static mkl\+\_\+rng\+::philox4x32x10 \& \mbox{\hyperlink{classbackend__sycl_a30894210414574162988df05e64d4e9c}{get\+\_\+rng\+\_\+engine}} ()
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+This is container for the S\+Y\+CL queue, random number generation engine and related functions like queue and engine initialization and maintenance. The queue could not be initialized as a global object. Global object initialization order is undefined. This class postpone initialization of the S\+Y\+CL queue and philox4x32x10 random number generation engine. 
+
+Definition at line 57 of file queue\+\_\+sycl.\+hpp.
+
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classbackend__sycl_a30a828cca8de39d1b782696819820566}\label{classbackend__sycl_a30a828cca8de39d1b782696819820566}} 
+\index{backend\_sycl@{backend\_sycl}!backend\_sycl@{backend\_sycl}}
+\index{backend\_sycl@{backend\_sycl}!backend\_sycl@{backend\_sycl}}
+\doxysubsubsection{\texorpdfstring{backend\_sycl()}{backend\_sycl()}}
+{\footnotesize\ttfamily backend\+\_\+sycl\+::backend\+\_\+sycl (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{classbackend__sycl}{backend\+\_\+sycl}} \&}]{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [delete]}}
+
+Explicitly disallow copying 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classbackend__sycl_acbfb9c9036f30c6ffdfdc773f80fc9e1}\label{classbackend__sycl_acbfb9c9036f30c6ffdfdc773f80fc9e1}} 
+\index{backend\_sycl@{backend\_sycl}!backend\_sycl\_is\_cpu@{backend\_sycl\_is\_cpu}}
+\index{backend\_sycl\_is\_cpu@{backend\_sycl\_is\_cpu}!backend\_sycl@{backend\_sycl}}
+\doxysubsubsection{\texorpdfstring{backend\_sycl\_is\_cpu()}{backend\_sycl\_is\_cpu()}}
+{\footnotesize\ttfamily bool backend\+\_\+sycl\+::backend\+\_\+sycl\+\_\+is\+\_\+cpu (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Return True if current queue is related to cpu or host device 
+
+Definition at line 122 of file queue\+\_\+sycl.\+cpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbackend__sycl_acbfb9c9036f30c6ffdfdc773f80fc9e1_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classbackend__sycl_acbfb9c9036f30c6ffdfdc773f80fc9e1_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbackend__sycl_a299f7e42c037f7ae60853df21ecf4848}\label{classbackend__sycl_a299f7e42c037f7ae60853df21ecf4848}} 
+\index{backend\_sycl@{backend\_sycl}!backend\_sycl\_queue\_init@{backend\_sycl\_queue\_init}}
+\index{backend\_sycl\_queue\_init@{backend\_sycl\_queue\_init}!backend\_sycl@{backend\_sycl}}
+\doxysubsubsection{\texorpdfstring{backend\_sycl\_queue\_init()}{backend\_sycl\_queue\_init()}}
+{\footnotesize\ttfamily void backend\+\_\+sycl\+::backend\+\_\+sycl\+\_\+queue\+\_\+init (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{group___b_a_c_k_e_n_d___a_p_i_gaae520250ac00985feaadcbd984c30ab1}{Queue\+Options}}}]{selector = {\ttfamily QueueOptions\+:\+:CPU\+\_\+SELECTOR} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize queue 
+
+Definition at line 80 of file queue\+\_\+sycl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbackend__sycl_a299f7e42c037f7ae60853df21ecf4848_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbackend__sycl_aa19e6be66be2be23d07b588adc1ac919}\label{classbackend__sycl_aa19e6be66be2be23d07b588adc1ac919}} 
+\index{backend\_sycl@{backend\_sycl}!backend\_sycl\_rng\_engine\_init@{backend\_sycl\_rng\_engine\_init}}
+\index{backend\_sycl\_rng\_engine\_init@{backend\_sycl\_rng\_engine\_init}!backend\_sycl@{backend\_sycl}}
+\doxysubsubsection{\texorpdfstring{backend\_sycl\_rng\_engine\_init()}{backend\_sycl\_rng\_engine\_init()}}
+{\footnotesize\ttfamily void backend\+\_\+sycl\+::backend\+\_\+sycl\+\_\+rng\+\_\+engine\+\_\+init (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{seed = {\ttfamily 1} }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+Initialize rng\+\_\+engine 
+
+Definition at line 134 of file queue\+\_\+sycl.\+cpp.
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classbackend__sycl_aa19e6be66be2be23d07b588adc1ac919_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbackend__sycl_ae542c859b7075e058f14197b025a1b4b}\label{classbackend__sycl_ae542c859b7075e058f14197b025a1b4b}} 
+\index{backend\_sycl@{backend\_sycl}!get\_queue@{get\_queue}}
+\index{get\_queue@{get\_queue}!backend\_sycl@{backend\_sycl}}
+\doxysubsubsection{\texorpdfstring{get\_queue()}{get\_queue()}}
+{\footnotesize\ttfamily static cl\+::sycl\+::queue\& backend\+\_\+sycl\+::get\+\_\+queue (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Return the queue to the user 
+
+Definition at line 117 of file queue\+\_\+sycl.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbackend__sycl_ae542c859b7075e058f14197b025a1b4b_cgraph}
+\end{center}
+\end{figure}
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{classbackend__sycl_ae542c859b7075e058f14197b025a1b4b_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{classbackend__sycl_a30894210414574162988df05e64d4e9c}\label{classbackend__sycl_a30894210414574162988df05e64d4e9c}} 
+\index{backend\_sycl@{backend\_sycl}!get\_rng\_engine@{get\_rng\_engine}}
+\index{get\_rng\_engine@{get\_rng\_engine}!backend\_sycl@{backend\_sycl}}
+\doxysubsubsection{\texorpdfstring{get\_rng\_engine()}{get\_rng\_engine()}}
+{\footnotesize\ttfamily static mkl\+\_\+rng\+::philox4x32x10\& backend\+\_\+sycl\+::get\+\_\+rng\+\_\+engine (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}, {\ttfamily [static]}}
+
+Return the rng\+\_\+engine to the user 
+
+Definition at line 136 of file queue\+\_\+sycl.\+hpp.
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=346pt]{classbackend__sycl_a30894210414574162988df05e64d4e9c_cgraph}
+\end{center}
+\end{figure}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+queue\+\_\+sycl.\+hpp\item 
+queue\+\_\+sycl.\+cpp\end{DoxyCompactItemize}
