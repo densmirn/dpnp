@@ -31,6 +31,10 @@
 #include "dpnp_utils.hpp"
 #include "queue_sycl.hpp"
 
+#include <ittnotify.h>
+
+__itt_domain* domain = __itt_domain_create("dpnp_krnl_elemwise");
+
 #define MACRO_1ARG_2TYPES_OP(__name__, __operation1__, __operation2__)                                                 \
     template <typename _KernelNameSpecialization>                                                                      \
     class __name__##_kernel;                                                                                           \
@@ -321,9 +325,13 @@ static void func_map_init_elemwise_1arg_1type(func_map_t& fmap)
               typename _KernelNameSpecialization3>                                                                     \
     class __name__##_kernel;                                                                                           \
                                                                                                                        \
+    __itt_string_handle* handle_##__name__ = __itt_string_handle_create(#__name__);                                    \
+                                                                                                                       \
     template <typename _DataType_input1, typename _DataType_input2, typename _DataType_output>                         \
     void __name__(void* array1_in, void* array2_in, void* result1, size_t size)                                        \
     {                                                                                                                  \
+        __itt_task_begin(domain, __itt_null, __itt_null, handle_##__name__);                                           \
+                                                                                                                       \
         cl::sycl::event event;                                                                                         \
         _DataType_input1* array1 = reinterpret_cast<_DataType_input1*>(array1_in);                                     \
         _DataType_input2* array2 = reinterpret_cast<_DataType_input2*>(array2_in);                                     \
@@ -356,6 +364,8 @@ static void func_map_init_elemwise_1arg_1type(func_map_t& fmap)
         }                                                                                                              \
                                                                                                                        \
         event.wait();                                                                                                  \
+                                                                                                                       \
+        __itt_task_end(domain);                                                                                        \
     }
 
 #include <dpnp_gen_2arg_3type_tbl.hpp>

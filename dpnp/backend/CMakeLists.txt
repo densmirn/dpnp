@@ -252,6 +252,10 @@ else()
     add_definitions(-DDPNP_LOCAL_QUEUE=1)
 endif()
 
+target_include_directories(dpnp_backend_c PUBLIC ${DPNP_VTUNE_INCLUDE_DIR})
+target_link_directories(dpnp_backend_c PUBLIC ${DPNP_VTUNE_LIB_DIR})
+target_link_libraries(dpnp_backend_c PUBLIC ${DPNP_VTUNE_LIB_DIR}/libittnotify.a)
+
 # -----------------------------------------------------------------------------------------------
 # Installation logic...
 # -----------------------------------------------------------------------------------------------
