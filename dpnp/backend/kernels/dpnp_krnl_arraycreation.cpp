@@ -29,6 +29,11 @@
 #include "dpnp_iface.hpp"
 #include "queue_sycl.hpp"
 
+#include <ittnotify.h>
+
+__itt_domain* domain_dpnp_krnl_arraycreation = __itt_domain_create("dpnp_krnl_arraycreation");
+__itt_string_handle* handle_dpnp_full_c = __itt_string_handle_create("dpnp_full_c");
+
 template <typename _KernelNameSpecialization>
 class dpnp_arange_c_kernel;
 
@@ -68,8 +73,10 @@ class dpnp_full_c_kernel;
 
 template <typename _DataType>
 void dpnp_full_c(void* array_in, void* result, const size_t size)
-{
+{    
+    __itt_task_begin(domain_dpnp_krnl_arraycreation, __itt_null, __itt_null, handle_dpnp_full_c);
     dpnp_initval_c<_DataType>(result, array_in, size);
+    __itt_task_end(domain_dpnp_krnl_arraycreation);
 }
 
 void func_map_init_arraycreation(func_map_t& fmap)

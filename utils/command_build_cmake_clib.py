@@ -118,6 +118,8 @@ class custom_build_cmake_clib(build_clib.build_clib):
             "-DDPNP_SYCL_QUEUE_MGR_ENABLE:BOOL=" + _dpctrl_exists,
             "-DDPNP_QUEUEMGR_INCLUDE_DIR=" + _dpctrl_include_dir,
             "-DDPNP_QUEUEMGR_LIB_DIR=" + _dpctrl_library_dir,
+            "-DDPNP_VTUNE_INCLUDE_DIR=" + "/opt/intel/oneapi/vtune/latest/include",
+            "-DDPNP_VTUNE_LIB_DIR=" + "/opt/intel/oneapi/vtune/latest/lib64",
             "-DCMAKE_VERBOSE_MAKEFILE:BOOL=ON",
             "-DDPNP_BACKEND_TESTS:BOOL=" + enable_tests
         ]

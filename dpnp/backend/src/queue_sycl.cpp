@@ -30,6 +30,11 @@
 #include <dpnp_iface.hpp>
 #include "queue_sycl.hpp"
 
+#include <ittnotify.h>
+
+__itt_domain* domain_queue_sycl = __itt_domain_create("queue_sycl");
+__itt_string_handle* handle_dpnp_queue_initialize_c = __itt_string_handle_create("dpnp_queue_initialize_c");
+
 #if defined(DPNP_LOCAL_QUEUE)
 cl::sycl::queue* backend_sycl::queue = nullptr;
 #endif
@@ -188,7 +193,9 @@ void backend_sycl::backend_sycl_rng_engine_init(size_t seed)
 
 void dpnp_queue_initialize_c(QueueOptions selector)
 {
+    __itt_task_begin(domain_queue_sycl, __itt_null, __itt_null, handle_dpnp_queue_initialize_c);
     backend_sycl::backend_sycl_queue_init(selector);
+    __itt_task_end(domain_queue_sycl);
 }
 
 size_t dpnp_queue_is_cpu_c()

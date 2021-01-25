@@ -34,6 +34,12 @@
 #include "dpnp_utils.hpp"
 #include "queue_sycl.hpp"
 
+#include <ittnotify.h>
+
+__itt_domain* domain_dpnp_krnl_random = __itt_domain_create("dpnp_krnl_random");
+__itt_string_handle* handle_dpnp_rng_srand_c = __itt_string_handle_create("dpnp_rng_srand_c");
+__itt_string_handle* handle_dpnp_rng_uniform_c = __itt_string_handle_create("dpnp_rng_uniform_c");
+
 namespace mkl_blas = oneapi::mkl::blas;
 namespace mkl_rng = oneapi::mkl::rng;
 namespace mkl_vm = oneapi::mkl::vm;
@@ -66,8 +72,10 @@ static VSLStreamStatePtr get_rng_stream()
 
 void dpnp_rng_srand_c(size_t seed)
 {
+    __itt_task_begin(domain_dpnp_krnl_random, __itt_null, __itt_null, handle_dpnp_rng_srand_c);
     backend_sycl::backend_sycl_rng_engine_init(seed);
     set_rng_stream(seed);
+    __itt_task_end(domain_dpnp_krnl_random);
 }
 
 template <typename _DataType>
@@ -1123,6 +1131,7 @@ void dpnp_rng_triangular_c(
 template <typename _DataType>
 void dpnp_rng_uniform_c(void* result, const long low, const long high, const size_t size)
 {
+    __itt_task_begin(domain_dpnp_krnl_random, __itt_null, __itt_null, handle_dpnp_rng_uniform_c);
     if (!size)
     {
         return;
@@ -1138,6 +1147,7 @@ void dpnp_rng_uniform_c(void* result, const long low, const long high, const siz
     // perform generation
     auto event_out = mkl_rng::generate(distribution, DPNP_RNG_ENGINE, size, result1);
     event_out.wait();
+    __itt_task_end(domain_dpnp_krnl_random);
 }
 
 #ifndef M_PI
