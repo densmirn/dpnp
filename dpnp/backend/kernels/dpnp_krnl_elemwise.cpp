@@ -74,8 +74,6 @@ __itt_domain* domain_dpnp_krnl_elemwise = __itt_domain_create("dpnp_krnl_elemwis
             event = DPNP_QUEUE.submit(kernel_func);                                                                    \
         }                                                                                                              \
                                                                                                                        \
-        event.wait();                                                                                                  \
-                                                                                                                       \
         __itt_task_end(domain_dpnp_krnl_elemwise);                                                                     \
     }
 
@@ -297,8 +295,6 @@ static void func_map_init_elemwise_1arg_2type(func_map_t& fmap)
             event = DPNP_QUEUE.submit(kernel_func);                                                                    \
         }                                                                                                              \
                                                                                                                        \
-        event.wait();                                                                                                  \
-                                                                                                                       \
         __itt_task_end(domain_dpnp_krnl_elemwise);                                                                     \
     }
 
@@ -386,8 +382,6 @@ static void func_map_init_elemwise_1arg_1type(func_map_t& fmap)
                                                                                                                        \
             event = DPNP_QUEUE.submit(kernel_func);                                                                    \
         }                                                                                                              \
-                                                                                                                       \
-        event.wait();                                                                                                  \
                                                                                                                        \
         __itt_task_end(domain_dpnp_krnl_elemwise);                                                                     \
     }
