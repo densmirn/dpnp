@@ -262,24 +262,30 @@ void dpnp_multiply_c(void* result_out,
     _DataType_input2* input2_data = reinterpret_cast<_DataType_input2*>(const_cast<void*>(input2_in));
     _DataType_output* result = reinterpret_cast<_DataType_output*>(result_out);
 
-    const size_t result_shape_ndim = (input2_shape_ndim > input1_shape_ndim) ? input2_shape_ndim : input1_shape_ndim;
-    vector<size_t> result_shape(result_shape_ndim);
-    get_common_shape(result_shape.data(), result_shape_ndim,
-                     input1_shape, input1_shape_ndim,
-                     input2_shape, input2_shape_ndim);
+    // const size_t result_shape_ndim = (input2_shape_ndim > input1_shape_ndim) ? input2_shape_ndim : input1_shape_ndim;
+    // vector<size_t> result_shape(result_shape_ndim);
+    // get_common_shape(result_shape.data(), result_shape_ndim,
+    //                  input1_shape, input1_shape_ndim,
+    //                  input2_shape, input2_shape_ndim);
 
     DPNPC_id<_DataType_input1> input1(input1_data, input1_shape, input1_shape_ndim);
-    input1.broadcast_to(result_shape, result_shape_ndim);
+    // input1.broadcast_to(result_shape, result_shape_ndim);
 
     DPNPC_id<_DataType_input2> input2(input2_data, input2_shape, input2_shape_ndim);
-    input2.broadcast_to(result_shape, result_shape_ndim);
+    // input2.broadcast_to(result_shape, result_shape_ndim);
 
     cl::sycl::range<1> gws(result_size);
     const DPNPC_id<_DataType_input1>* input1_it = &input1;
     const DPNPC_id<_DataType_input2>* input2_it = &input2;
     auto kernel_parallel_for_func = [=](cl::sycl::id<1> global_id) {
-        size_t i = global_id[0]; /*for (size_t i = 0; i < result_size; ++i)*/
-        result[i] = input1_it[i] * input2_it[i];
+        const size_t i = global_id[0]; /*for (size_t i = 0; i < result_size; ++i)*/
+        {
+            const size_t idx1 = (input1_size == 1) ? 0 : i;
+            const size_t idx2 = (input2_size == 1) ? 0 : i;
+            const _DataType_input1 input1_elem = (*input1_it)[idx1];
+            const _DataType_input2 input2_elem = (*input2_it)[idx2];
+            result[i] = input1_elem * input2_elem;
+        }
     };
     auto kernel_func = [&](cl::sycl::handler& cgh) {
         cgh.parallel_for<class dpnp_multiply_c_kernel<_DataType_output, _DataType_input1,
